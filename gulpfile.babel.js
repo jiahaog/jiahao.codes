@@ -7,7 +7,6 @@ import browserify from 'browserify';
 import watchify from 'watchify';
 import babel from 'babelify';
 import runSequence from 'run-sequence';
-import mocha from 'gulp-mocha';
 import less from 'gulp-less';
 import browserSync from 'browser-sync';
 import ghPages from 'gulp-gh-pages';
@@ -52,13 +51,7 @@ function watchJs() {
     return compileJs(true);
 }
 
-gulp.task('test', () => {
-    return gulp.src('./test/**/*.js', {read: false})
-        // gulp-mocha needs filepaths so you can't have any plugins before it
-        .pipe(mocha());
-});
-
-gulp.task('js', ['test'], () => {
+gulp.task('js', () => {
     return compileJs();
 });
 
@@ -96,7 +89,7 @@ gulp.task('browserSync', () => {
     })
 });
 
-gulp.task('watch', ['browserSync', 'useref', 'test'], () => {
+gulp.task('watch', ['browserSync', 'useref'], () => {
     watchJs();
     gulp.watch('src/less/**/*.less', ['useref']);
     gulp.watch('src/**/*.html', ['useref']);
