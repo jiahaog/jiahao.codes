@@ -17,6 +17,12 @@ class SearchBox extends React.Component {
         });
     };
 
+    buttonOnClick = value => {
+        this.setState({
+            text: value
+        });
+    };
+
     maybeDropdown = () => {
         if (!this.state.text) {
             return;
@@ -40,11 +46,14 @@ class SearchBox extends React.Component {
                     <input className="input" type="text"
                            placeholder="Enter Text"
                            onChange={this.handleChange}
-                           list="languages"/>
+                           list="languages" value={this.state.text}/>
                     {this.maybeDropdown()}
                 </p>
             </div>
-
+            <div className="text-preset-button-group">
+                <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Education')}>Education</span>
+                <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Contact')}>Contact</span>
+            </div>
             <ContentDetails rawText={this.state.text}/>
         </div>
     }
@@ -52,11 +61,7 @@ class SearchBox extends React.Component {
 
 class ContentDetails extends React.Component {
     showContent = () => {
-        const getDom = articles.fuzzyGetDOMfunc(this.props.rawText);
-        if (!getDom) {
-            return 'Unknown';
-        }
-        return getDom();
+        return articles.fuzzyGetDOMfunc(this.props.rawText)();
     };
 
     render() {

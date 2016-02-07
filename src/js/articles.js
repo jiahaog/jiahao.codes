@@ -2,7 +2,7 @@ import React from 'react';
 import Levenshtein from 'levenshtein';
 
 
-function educationDom() {
+function educationDOM() {
     return <section className="section">
         <div className="container">
             <h1 className="title">Education</h1>
@@ -13,7 +13,7 @@ function educationDom() {
     </section>
 }
 
-function contactDom() {
+function contactDOM() {
     return <section className="section">
         <div className="container">
             <h1 className="title">Contact</h1>
@@ -24,6 +24,11 @@ function contactDom() {
     </section>
 }
 
+function defaultDOM() {
+    return <section className="section">
+        Type something!
+    </section>
+}
 function fuzzyKey(inpString, keys) {
     let smallestDistance = Number.MAX_SAFE_INTEGER;
     let smallestKey = '';
@@ -46,15 +51,15 @@ function fuzzyKey(inpString, keys) {
 class Articles {
     constructor() {
         this.articles = {
-            'Education': educationDom,
-            'Contact': contactDom
+            'Education': educationDOM,
+            'Contact': contactDOM
         }
     }
 
     fuzzyGetDOMfunc(testString) {
         const key = fuzzyKey(testString, this.getAllKeys());
         if (!key) {
-            return null;
+            return defaultDOM;
         }
 
         return this.articles[key];
