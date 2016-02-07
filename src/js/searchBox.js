@@ -1,8 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Articles from './articles/articlesMain';
-
 const articles = new Articles();
+
+// workaround until waypoints can be Browserified
+require('waypoints/lib/noframework.waypoints.js');
 
 class SearchBox extends React.Component {
     constructor(props) {
@@ -69,13 +71,46 @@ class SearchBox extends React.Component {
 }
 
 class ContentDetails extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            showAll: false
+        }
+    }
+
+    componentDidMount = () => {
+        new Waypoint({
+            element: document.getElementById('whitespace-placeholder'),
+            handler: (direction) => {
+                if (direction === 'down') {
+                    this.setState({
+                        showAll: true
+                    });
+                }
+            }
+        });
+    };
+
     showContent = () => {
         return articles.fuzzyGetDOMfunc(this.props.rawText)();
+    };
+
+    maybeShowAll = () => {
+        if (this.state.showAll) {
+            return <div>
+                {articles.allDOM()}
+            </div>
+        }
     };
 
     render() {
         return <div>
             {this.showContent()}
+            <div id="whitespace-placeholder" className="continue-scroll-placeholder is-centered">
+                <i className="scroll-icon fa fa-angle-down"/>
+            </div>
+            {this.maybeShowAll()}
         </div>
     }
 }

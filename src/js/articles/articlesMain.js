@@ -46,6 +46,14 @@ class Articles {
     getAllKeys() {
         return Object.keys(this.articles);
     }
+
+    allDOM() {
+        return this.getAllKeys().map(key => {
+            return <div key={key}>
+                {this.articles[key]()}
+            </div>
+        });
+    }
 }
 
 export default Articles;
