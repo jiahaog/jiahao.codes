@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import Articles from './articles/articlesMain';
 
 const articles = new Articles();
@@ -39,21 +40,28 @@ class SearchBox extends React.Component {
         </datalist>
     };
 
+    componentDidMount = () => {
+        ReactDOM.findDOMNode(this.refs.searchBoxInput).focus();
+    };
+
     render() {
         return <div>
             <div className="container">
                 <p className="control">
-                    <input className="input" type="text"
-                           placeholder="Enter Text"
+                    <input className="search-box-input input" type="text"
                            onChange={this.handleChange}
-                           list="languages" value={this.state.text}/>
+                           list="languages"
+                           ref="searchBoxInput"
+                           value={this.state.text}
+                           autofocus/>
                     {this.maybeDropdown()}
                 </p>
             </div>
             <div className="text-preset-button-group">
                 <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Education')}>Education</span>
                 <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Contact')}>Contact</span>
-                <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Photography')}>Photography</span>
+                <span className="tag is-primary"
+                      onClick={this.buttonOnClick.bind(this, 'Photography')}>Photography</span>
             </div>
             <ContentDetails rawText={this.state.text}/>
         </div>
