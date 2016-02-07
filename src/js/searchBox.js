@@ -1,5 +1,5 @@
 import React from 'react';
-import Articles from './articles';
+import Articles from './articles/articlesMain';
 
 const articles = new Articles();
 
