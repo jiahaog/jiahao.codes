@@ -53,6 +53,7 @@ class SearchBox extends React.Component {
             <div className="text-preset-button-group">
                 <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Education')}>Education</span>
                 <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Contact')}>Contact</span>
+                <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Photography')}>Photography</span>
             </div>
             <ContentDetails rawText={this.state.text}/>
         </div>
