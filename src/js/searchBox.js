@@ -1,7 +1,7 @@
 import React from 'react';
-import articles from './articles';
+import Articles from './articles';
 
-const searchOptionKeys = Object.keys(articles);
+const articles = new Articles();
 
 class SearchBox extends React.Component {
     constructor(props) {
@@ -9,8 +9,6 @@ class SearchBox extends React.Component {
         this.state = {
             text: ''
         };
-
-        this.searchOptionKeys = searchOptionKeys
     }
 
     handleChange = event => {
@@ -25,7 +23,7 @@ class SearchBox extends React.Component {
         }
 
         const getOptions = () => {
-            return this.searchOptionKeys.map(option => {
+            return articles.getAllKeys().map(option => {
                 return <option key={option} value={option}/>
             });
         };
@@ -47,14 +45,14 @@ class SearchBox extends React.Component {
                 </p>
             </div>
 
-            <ContentDetails hello={this.state.text}/>
+            <ContentDetails rawText={this.state.text}/>
         </div>
     }
 }
 
 class ContentDetails extends React.Component {
     showContent = () => {
-        const getDom = articles[this.props.hello];
+        const getDom = articles.fuzzyGetDOMfunc(this.props.rawText);
         if (!getDom) {
             return 'Unknown';
         }

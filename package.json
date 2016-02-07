@@ -34,6 +34,7 @@
     "gulp-uglify": "^1.5.1",
     "gulp-useref": "^3.0.4",
     "install": "^0.4.2",
+    "levenshtein": "^1.0.5",
     "npm": "^3.7.1",
     "react": "^0.14.5",
     "react-dom": "^0.14.5",
