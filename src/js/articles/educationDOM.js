@@ -1,18 +1,11 @@
 import React from 'react';
+import helpers from './articleHelpers';
+
+const getYears = helpers.getYears;
 
 const resume = require('./../../../data/resume');
 const university = resume.education[0];
 const preUniversity = resume.education[1];
-
-function getYear(dateString) {
-    return new Date(dateString).getUTCFullYear();
-}
-function getYears(startDateString, endDateString) {
-    return {
-        startYear: getYear(startDateString),
-        endYear: getYear(endDateString)
-    }
-}
 
 function universityDOM() {
     const {institution, area, studyType, track, startDate, endDate, courses, highlights} = university;
