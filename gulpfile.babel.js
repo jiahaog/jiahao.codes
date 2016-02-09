@@ -97,7 +97,7 @@ gulp.task('watch', ['browserSync', 'useref'], () => {
 
 gulp.task('deploy', () => {
     // todo figure out bug why can't I do deploy with ['build'] as a prerequisite
-    return gulp.src('./dist/**/*')
+    return gulp.src(['./dist/**/*', './CNAME'])
         .pipe(ghPages({
             branch: 'master'
         }));
