@@ -10,8 +10,7 @@ dist
 # ignore gulp-github-pages cache dir
 .publish
 
-# ignore resume data
-data
+data/resume.json
 
 # Logs
 logs

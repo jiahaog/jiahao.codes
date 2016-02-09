@@ -1,0 +1,17 @@
+{
+  "javascript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+  "python": "https://www.python.org/",
+  "objective-c": "https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html",
+  "java": "https://www.java.com/",
+  "pebble": "https://getpebble.com/",
+  "android": "https://www.android.com/",
+  "ios": "https://www.apple.com/ios/",
+  "node.js": "https://nodejs.org/",
+  "npm": "https://www.npmjs.com/",
+  "docker": "https://www.docker.com/",
+  "meteor": "https://www.meteor.com/",
+  "git": "https://git-scm.com/",
+  "mocha": "http://mochajs.org/",
+  "electron": "http://jiahaog.com/assets/svg/electron.svg",
+  "phantomjs": "http://phantomjs.org/"
+}
