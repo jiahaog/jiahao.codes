@@ -48,22 +48,27 @@ class SearchBox extends React.Component {
 
     render() {
         return <div>
-            <div className="container">
-                <p className="control">
-                    <input className="search-box-input input" type="text"
-                           onChange={this.handleChange}
-                           list="languages"
-                           ref="searchBoxInput"
-                           value={this.state.text}
-                           autofocus/>
-                    {this.maybeDropdown()}
-                </p>
-            </div>
-            <div className="text-preset-button-group">
-                <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Education')}>Education</span>
-                <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Contact')}>Contact</span>
+            <div className="section">
+                <h2 className="subtitle">
+                    Discover things about me!
+                </h2>
+                <div className="container">
+                    <p className="control">
+                        <input className="search-box-input input" type="text"
+                               onChange={this.handleChange}
+                               list="languages"
+                               ref="searchBoxInput"
+                               value={this.state.text}
+                               autofocus/>
+                        {this.maybeDropdown()}
+                    </p>
+                </div>
+                <div className="text-preset-button-group">
+                    <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Education')}>Education</span>
+                    <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Contact')}>Contact</span>
                 <span className="tag is-primary"
                       onClick={this.buttonOnClick.bind(this, 'Photography')}>Photography</span>
+                </div>
             </div>
             <ContentDetails rawText={this.state.text}/>
         </div>
