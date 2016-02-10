@@ -14,5 +14,6 @@
   "git": "https://git-scm.com/",
   "mocha": "http://mochajs.org/",
   "electron": "http://electron.atom.io/",
-  "phantomjs": "http://phantomjs.org/"
+  "phantomjs": "http://phantomjs.org/",
+  "minimax algorithm": "https://en.wikipedia.org/wiki/Minimax"
 }
