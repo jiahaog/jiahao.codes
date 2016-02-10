@@ -16,6 +16,14 @@ function gitHubButton(user, repo) {
     const src = `https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=star&count=true`;
     return <iframe src={src} frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
 }
+
+function maybeOverride(repo) {
+    if (repo === 'ttt') {
+        return <p>
+            Play it <a target="_blank" href="http://jiahaog.github.io/ttt">here</a>!
+        </p>
+    }
+}
 function projectsDOM() {
     const projectNodes = projects.map(project => {
         const {name, gitHubUser, gitHubRepo, summary, startDate, endDate, keywords} = project;
@@ -47,7 +55,7 @@ function projectsDOM() {
                     <div className="column">
                         <div className="content">
                             <p>{summary}</p>
-
+                            {maybeOverride(gitHubRepo)}
                         </div>
                     </div>
                     <div className="column is-2">
