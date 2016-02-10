@@ -15,6 +15,7 @@ import useref from 'gulp-useref';
 import gulpif from 'gulp-if';
 import minifyCss from 'gulp-cssnano';
 import autoprefixer from 'gulp-autoprefixer';
+import responsive from 'gulp-responsive';
 
 function compileJs(watch) {
     var bundler = browserify('./src/js/main.js', { debug: true }).transform(babel);
@@ -76,8 +77,32 @@ gulp.task('clean', callback => {
     });
 });
 
+gulp.task('img', function () {
+    return gulp.src('src/img/photos/**/*.jpg')
+        .pipe(responsive({
+            '*.jpg': [{
+                width: 480,
+                rename: { suffix: '-480px' }
+            }, {
+                width: 960,
+                rename: { suffix: '-960px' }
+            },{
+                width: 1440,
+                rename: { suffix: '-1440px' }
+            },{
+                width: 1920,
+                rename: { suffix: '-1920px'}
+            }]
+        }, {
+            quality: 70,
+            progressive: true,
+            withMetadata: false
+        }))
+        .pipe(gulp.dest('dist/img'));
+});
+
 gulp.task('build', callback => {
-    runSequence('clean', ['useref', 'js'], callback);
+    runSequence('clean', ['useref', 'js', 'img'], callback);
 });
 
 gulp.task('browserSync', () => {
@@ -89,7 +114,7 @@ gulp.task('browserSync', () => {
     })
 });
 
-gulp.task('watch', ['browserSync', 'useref'], () => {
+gulp.task('watch', ['browserSync', 'useref', 'img'], () => {
     watchJs();
     gulp.watch('src/less/**/*.less', ['useref']);
     gulp.watch('src/**/*.html', ['useref']);
