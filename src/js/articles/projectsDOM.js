@@ -14,7 +14,7 @@ function getHref(search) {
 
 function gitHubButton(user, repo) {
     const src = `https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=star&count=true`;
-    return <iframe src={src} frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+    return <iframe src={src} scrolling="0" width="170px" height="20px"></iframe>
 }
 
 function maybeOverride(repo) {
@@ -77,7 +77,7 @@ function projectsDOM() {
                 </div>
             </div>
             <div className="column is-3 is-right">
-                <iframe src="https://ghbtns.com/github-btn.html?user=jiahaog&type=follow&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe>
+                <iframe src="https://ghbtns.com/github-btn.html?user=jiahaog&type=follow&count=true" scrolling="0" width="170px" height="20px"></iframe>
             </div>
         </div>
         {projectNodes}
