@@ -6,6 +6,8 @@ const articles = new Articles();
 // workaround until waypoints can be Browserified
 require('waypoints/lib/noframework.waypoints.js');
 
+const TAGS_TO_SHOW = ['Education', 'Email', 'Projects'];
+
 class SearchBox extends React.Component {
     constructor(props) {
         super(props);
@@ -64,10 +66,9 @@ class SearchBox extends React.Component {
                     </p>
                 </div>
                 <div className="text-preset-button-group">
-                    <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Education')}>Education</span>
-                    <span className="tag is-primary" onClick={this.buttonOnClick.bind(this, 'Contact')}>Contact</span>
-                <span className="tag is-primary"
-                      onClick={this.buttonOnClick.bind(this, 'Photography')}>Photography</span>
+                    {TAGS_TO_SHOW.map(tag => {
+                        return <span key={`helper-tag-${tag}`} className="tag is-primary" onClick={this.buttonOnClick.bind(this, tag)}>{tag}</span>
+                    })}
                 </div>
             </div>
             <ContentDetails rawText={this.state.text}/>
