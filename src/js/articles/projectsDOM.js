@@ -38,9 +38,11 @@ function projectsDOM() {
                         <h2 className="subtitle is-6">
                             <div className="text-preset-button-group">
                                 {keywords.map(keyword => {
-                                    return <a target="_blank" href={getHref(keyword)} className="tag is-success" key={`${name}-${keyword}`}>
-                                        {keyword}
-                                    </a>
+                                    return <span key={`${name}-${keyword}`}>
+                                            <a target="_blank" href={getHref(keyword)} className="tag is-success">
+                                                {keyword}
+                                            </a>{' '}
+                                        </span>
                                 })}
                             </div>
                         </h2>
