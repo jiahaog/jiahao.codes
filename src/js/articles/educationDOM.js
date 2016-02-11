@@ -68,9 +68,9 @@ function preUniversityDOM() {
 
 function educationDOM() {
     return <section className="section">
-            <h1 className="title">Education</h1>
-            {universityDOM()}
-            {preUniversityDOM()}
+        <h1 className="title">Education</h1>
+        {universityDOM()}
+        {preUniversityDOM()}
     </section>
 }
 
