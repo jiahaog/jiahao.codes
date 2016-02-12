@@ -8,7 +8,6 @@
 
   <title>Jia Hao</title>
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/combined.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -24,6 +23,12 @@
 </head>
 
 <body>
+
+<script>
+  // add touch and no touch class to css
+  document.documentElement.className +=
+    (("ontouchstart" in document.documentElement) ? ' touch' : ' no-touch');
+</script>
 
 <section class="hero">
   <div class="hero-content">
@@ -48,7 +53,7 @@
   <div class="container">
     <div class="content is-centered">
       <p>
-        Built with <a href="http://bulma.io/">Bulma</a>, <a href="https://facebook.github.io/react/">React</a> and more. <a class="icon" href="http://github.com/jiahaog/jiahaog.github.io">
+        Built with <a target="_blank" href="http://bulma.io/">Bulma</a>, <a target="_blank" href="https://facebook.github.io/react/">React</a> and more. <a title="Source Code" target="_blank" class="icon" href="http://github.com/jiahaog/jiahaog.github.io">
         <i class="fa fa-github"></i>
       </a>
       </p>
