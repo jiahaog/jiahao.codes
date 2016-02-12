@@ -29,14 +29,12 @@ function imageNode(details) {
 }
 
 function photographyDOM() {
-    return <section className="jh-container is-flex">
-        <div className="is-centered">
-            <h1 className="title">Photography</h1>
-            <h2 className="subtitle">
-                Nikon D610 | 50mm <span className="f-number-symbol">f</span>1.8 | 28mm <span
-                className="f-number-symbol">f</span>2.8
-            </h2>
-        </div>
+    return <section className="jh-container is-centered">
+        <h1 className="title">Photography</h1>
+        <h2 className="subtitle">
+            Nikon D610 | 50mm <span className="f-number-symbol">f</span>1.8 | 28mm <span
+            className="f-number-symbol">f</span>2.8
+        </h2>
 
         {photographyProjects.map(details => {
             return imageNode(details);
