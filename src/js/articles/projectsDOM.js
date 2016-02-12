@@ -68,7 +68,7 @@ function projectsDOM() {
         </section>
     });
 
-    return <section className="section">
+    return <section className="jh-container">
         <h1 className="title">Projects</h1>
         <div className="columns">
             <div className="column">

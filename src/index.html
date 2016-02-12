@@ -28,6 +28,12 @@
 
 <body>
 
+<script>
+  // add touch and no touch class to css
+  document.documentElement.className +=
+    (("ontouchstart" in document.documentElement) ? ' touch' : ' no-touch');
+</script>
+
 <section class="hero">
   <div class="hero-content">
     <div class="container">

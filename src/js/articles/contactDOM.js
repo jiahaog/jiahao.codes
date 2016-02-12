@@ -6,7 +6,7 @@ const basics = resume.basics;
 const {email} = basics;
 
 function contactDOM() {
-    return <section className="section">
+    return <section className="jh-container">
         <div className="container">
             <h1 className="title">Contact</h1>
             <h2 className="subtitle">

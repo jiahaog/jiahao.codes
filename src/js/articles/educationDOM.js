@@ -67,7 +67,7 @@ function preUniversityDOM() {
 }
 
 function educationDOM() {
-    return <section className="section">
+    return <section className="jh-container">
         <h1 className="title">Education</h1>
         {universityDOM()}
         {preUniversityDOM()}

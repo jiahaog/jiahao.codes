@@ -58,24 +58,23 @@ input::-webkit-calendar-picker-indicator {
 
 .photo-showcase-container {
   position: relative;
+}
+
+.photo-container {
   background-color: black;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .photo-showcase-img {
-  opacity: 0.7;
+  // needed to stop img from overflowing div
   display: block;
+}
+
+.photo-showcase-img, .photo-caption {
+  transition: opacity 0.5s;
 }
 
 .photo-showcase-img, .photo-showcase-container {
   width: 700px;
-}
-
-@media (max-width: 480px) {
-  .photo-showcase-img, .photo-showcase-container {
-    width: 100vw;
-  }
 }
 
 @media (max-width: 900px) {
@@ -84,12 +83,46 @@ input::-webkit-calendar-picker-indicator {
   }
 }
 
-.photo-caption {
+@media (max-width: 480px) {
+  .photo-showcase-img, .photo-showcase-container {
+    width: 85vw;
+  }
+}
+
+.photo-caption-container {
   position: absolute;
   top: 45%;
   left: 0;
   width: 100%;
+  opacity: 0;
+}
+
+.photo-caption {
   color: white;
+}
+
+.photo-caption-container-touch {
+  padding-top: 20px;
+  display: none;
+}
+
+.touch {
+  .photo-caption-container {
+    display: none;
+  }
+
+  .photo-caption-container-touch {
+    display: block;
+  }
+}
+
+// photo animations
+.photo-showcase-container:hover .photo-caption-container {
+  opacity: 1;
+}
+
+.photo-showcase-container:hover .photo-showcase-img {
+  opacity: 0.5;
 }
 
 // others
