@@ -6,7 +6,7 @@ const articles = new Articles();
 // workaround until waypoints can be Browserified
 require('waypoints/lib/noframework.waypoints.js');
 
-const TAGS_TO_SHOW = ['Education', 'Contact', 'Projects'];
+const TAGS_TO_SHOW = ['Profiles', 'Education', 'Contact', 'Projects', 'Photography'];
 
 class SearchBox extends React.Component {
     constructor(props) {
