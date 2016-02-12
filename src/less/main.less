@@ -53,3 +53,43 @@ input::-webkit-calendar-picker-indicator {
 .summary-paragraph {
   max-width: 640px;
 }
+
+// Photo Showcase
+
+.photo-showcase-container {
+  position: relative;
+  background-color: black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-showcase-img {
+  opacity: 0.7;
+  display: block;
+}
+
+.photo-showcase-img, .photo-showcase-container {
+  width: 700px;
+}
+
+@media (max-width: 480px) {
+  .photo-showcase-img, .photo-showcase-container {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 900px) {
+  .photo-showcase-img, .photo-showcase-container {
+    width: 70vw;
+  }
+}
+
+.photo-caption {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 100%;
+  color: white;
+}
+
+// others
