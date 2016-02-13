@@ -56,7 +56,7 @@ function projectsDOM() {
                         <div className="content">
                             <p>{summary}</p>
                             <div className="subsection is-centered">
-                                <a href={website}>
+                                <a target="_blank" href={website}>
                                     {screenshots ? screenshots.map((src, index) => {
                                         return <img className="project-screenshot" key={`${name}-screenshot-${index}`} src={src} alt={`${name}-screenshot`}/>
                                     }): ''}

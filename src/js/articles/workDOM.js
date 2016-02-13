@@ -17,7 +17,7 @@ function workNode(details) {
                     {company}
                 </h2>
                 <h2 className="subtitle is-6">
-                    <a href={website}>{position}</a>
+                    <a target="_blank" href={website}>{position}</a>
                 </h2>
             </div>
             <div className="column is-2">
@@ -44,9 +44,6 @@ function workNode(details) {
 function workDOM() {
     return <section className="jh-container">
         <h1 className="title">Working Experience</h1>
-        <h2 className="subtitle">
-
-        </h2>
         <div className="jh-container">
             {work.map((details, index) => {
                 return <section key={`work-${index}`} className="section">
