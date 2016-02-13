@@ -26,7 +26,7 @@ function maybeOverride(repo) {
 }
 function projectsDOM() {
     const projectNodes = projects.map(project => {
-        const {name, gitHubUser, gitHubRepo, summary, startDate, endDate, keywords} = project;
+        const {name, gitHubUser, gitHubRepo, summary, startDate, endDate, keywords, screenshots, website} = project;
         const {startYear, endYear} = getYears(startDate, endDate);
         return <section className="section" key={name}>
             <div className="container">
@@ -61,6 +61,13 @@ function projectsDOM() {
                     <div className="column">
                         <div className="content">
                             <p>{summary}</p>
+                            <div className="subsection is-centered">
+                                <a href={website}>
+                                    {screenshots ? screenshots.map((src, index) => {
+                                        return <img className="project-screenshot" key={`${name}-screenshot-${index}`} src={src} alt={`${name}-screenshot`}/>
+                                    }): ''}
+                                </a>
+                            </div>
                             {maybeOverride(gitHubRepo)}
                         </div>
                     </div>
