@@ -1,3 +1,5 @@
+const hrefs = require('./../../../data/hrefs');
+
 function getYear(dateString) {
     if (dateString === 'Present') {
         return dateString;
@@ -11,6 +13,10 @@ function getYears(startDateString, endDateString) {
     }
 }
 
+function getHref(search) {
+    return hrefs[search.toLowerCase()];
+}
+
 export default {
-    getYears
+    getYears, getHref
 }

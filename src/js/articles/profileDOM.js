@@ -6,7 +6,7 @@ const profiles = resume.basics.profiles;
 
 function profileNode(details) {
     const {network, url} = details;
-    return <span key={`photography-${network}`} className="jh-container">
+    return <span key={`profile-${network}`} className="jh-container">
         <a target="_blank" href={url}>
             <img className="profile-svg" src={`svg/${network.toLowerCase()}.svg`} alt={network}/>
         </a>

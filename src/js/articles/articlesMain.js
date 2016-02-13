@@ -7,6 +7,7 @@ import educationDOM from './educationDOM';
 import photographyDOM from './photographyDOM';
 import projectsDOM from './projectsDOM';
 import profileDOM from './profileDOM';
+import workDOM from './workDOM';
 
 function fuzzyKey(inpString, keys) {
     let smallestDistance = Number.MAX_SAFE_INTEGER;
@@ -21,7 +22,7 @@ function fuzzyKey(inpString, keys) {
         }
     });
 
-    if (smallestDistance < 5) {
+    if (smallestDistance < 3) {
         return smallestKey;
     }
     return null;
@@ -34,7 +35,8 @@ class Articles {
             'Contact': contactDOM,
             'Profile': profileDOM,
             'Photography': photographyDOM,
-            'Projects': projectsDOM
+            'Projects': projectsDOM,
+            'Work': workDOM
         }
     }
 

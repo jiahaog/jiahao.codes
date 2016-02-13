@@ -1,16 +1,10 @@
 import React from 'react';
 import helpers from './articleHelpers';
 
-const getYears = helpers.getYears;
+const {getYears, getHref} = helpers;
 
 const resume = require('./../../../data/resume');
-const hrefs = require('./../../../data/hrefs');
-
 const projects = resume.projects;
-
-function getHref(search) {
-    return hrefs[search.toLowerCase()];
-}
 
 function gitHubButton(user, repo) {
     const src = `https://ghbtns.com/github-btn.html?user=${user}&repo=${repo}&type=star&count=true`;
