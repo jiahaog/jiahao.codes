@@ -87,7 +87,7 @@ function projectsDOM() {
                     <p>In my free time, I enjoy working on various open source projects that allows me to explore the exciting new technologies freely available on the internet. Check me out on <a target="_blank" href="https://github.com/jiahaog">GitHub</a>!</p>
                 </div>
             </div>
-            <div className="column is-3 is-right">
+            <div className="column is-3">
                 <iframe src="https://ghbtns.com/github-btn.html?user=jiahaog&type=follow&count=true" scrolling="0" width="170px" height="20px"></iframe>
             </div>
         </div>
