@@ -8,6 +8,13 @@
 
   <title>Jia Hao</title>
 
+  <script>
+    var host = "jiahaog.com";
+    if ((host === window.location.host) && (window.location.protocol !== "https:")) {
+      window.location.protocol = "https";
+    }
+  </script>
+
   <!-- build:css css/combined.css -->
   <link href="./../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
   <link href="./../node_modules/bulma/css/bulma.css" rel="stylesheet">
