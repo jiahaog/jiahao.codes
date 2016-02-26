@@ -8,6 +8,7 @@ import photographyDOM from './photographyDOM';
 import projectsDOM from './projectsDOM';
 import profileDOM from './profileDOM';
 import workDOM from './workDOM';
+import skillsDOM from './skillsDOM';
 
 function fuzzyKey(inpString, keys) {
     let smallestDistance = Number.MAX_SAFE_INTEGER;
@@ -36,7 +37,8 @@ class Articles {
             'Profile': profileDOM,
             'Photography': photographyDOM,
             'Projects': projectsDOM,
-            'Work': workDOM
+            'Work': workDOM,
+            'Skills': skillsDOM
         }
     }
 
