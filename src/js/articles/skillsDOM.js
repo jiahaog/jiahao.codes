@@ -19,7 +19,7 @@ function keywordNodes(level, proficiency) {
     let colorModifier;
     switch (proficiency) {
         case 0:
-            proficiencyStr = <span><i className="fa fa-star"/></span>;
+            proficiencyStr = <span><i className="fa fa-star"/><i className="fa fa-star"/><i className="fa fa-star"/></span>;
             colorModifier = 'color-primary';
             break;
         case 1:
@@ -27,7 +27,7 @@ function keywordNodes(level, proficiency) {
             colorModifier = 'color-info';
             break;
         default:
-            proficiencyStr = <span><i className="fa fa-star"/><i className="fa fa-star"/><i className="fa fa-star"/></span>;
+            proficiencyStr = <span><i className="fa fa-star"/></span>;
             colorModifier = 'color-success';
             break;
     }
