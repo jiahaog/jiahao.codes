@@ -111,8 +111,13 @@ gulp.task('svg', () => {
         .pipe(gulp.dest('dist/svg'))
 });
 
+gulp.task('favicon', () => {
+    return gulp.src(['src/favicon.ico', 'src/favicon-152.png'])
+        .pipe(gulp.dest('dist'))
+});
+
 gulp.task('build', callback => {
-    runSequence('clean', ['useref', 'js', 'img', 'fonts', 'svg'], callback);
+    runSequence('clean', ['useref', 'js', 'img', 'fonts', 'svg', 'favicon'], callback);
 });
 
 gulp.task('browserSync', () => {
@@ -124,7 +129,7 @@ gulp.task('browserSync', () => {
     })
 });
 
-gulp.task('watch', ['browserSync', 'useref', 'img', 'fonts', 'svg'], () => {
+gulp.task('watch', ['browserSync', 'useref', 'img', 'fonts', 'svg', 'favicon'], () => {
     watchJs();
     gulp.watch('src/less/**/*.less', ['useref']);
     gulp.watch('src/**/*.html', ['useref']);
