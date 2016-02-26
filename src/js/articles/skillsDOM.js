@@ -1,6 +1,8 @@
 import React from 'react';
+import helpers from './articleHelpers';
 
 const resume = require('./../../../data/resume');
+const {getHref} = helpers;
 const skills = resume.skills;
 
 function normalizeKeyword(keyword) {
@@ -32,11 +34,11 @@ function keywordNodes(level, proficiency) {
 
 
     return level.map(keyword => {
-        const svgFileName = normalizeKeyword(keyword);
+        const normalizedKeyword = normalizeKeyword(keyword);
         return <div key={keyword} className={`${colorModifier} skill-item column children-v-centered`}>
-            <a className={`${colorModifier} columns is-mobile is-fullwidth is-clickable`}>
+            <a target="_blank" href={getHref(normalizedKeyword)} className={`${colorModifier} columns is-mobile is-fullwidth is-clickable`}>
                 <div className="column is-text-centered children-v-centered">
-                    <img className="skill-svg" src={`svg/${svgFileName}.svg`} alt={keyword}/>
+                    <img className="skill-svg" src={`svg/${normalizedKeyword}.svg`} alt={keyword}/>
                 </div>
                 <div className="column children-v-centered">
                     <div className="is-text-centered">{keyword}</div>
