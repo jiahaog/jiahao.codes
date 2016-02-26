@@ -1,3 +1,8 @@
+@color-primary: #1fc8db;
+@color-info: #42afe3;
+@color-success: #7bbf51;
+@color-danger: #ed6c63;
+
 // hide the dropdown for the input box
 input::-webkit-calendar-picker-indicator {
   display: none;
@@ -131,12 +136,20 @@ input::-webkit-calendar-picker-indicator {
   width: 50px;
   height: 50px;
   margin-right: 20px;
-  transition: opacity 0.3s;
 }
 
-.profile-svg:hover {
+.is-clickable {
+  transition: opacity 0.3s;
+}
+.is-clickable:hover {
   opacity: 0.5;
 }
+
+.skill-svg {
+  height: 25px;
+  vertical-align: middle;
+}
+
 // others
 
 .jh-summary {
@@ -155,4 +168,44 @@ input::-webkit-calendar-picker-indicator {
 
 .subsection {
   margin-top: 20px;
+}
+
+.skill-item {
+  flex: 0 0 175px;
+  border-radius: 3px;
+  border: 1px solid;
+  margin: 10px;
+  padding: 0;
+  height: 44px;
+}
+
+
+//.skill-item .column {
+//  padding: 0;
+//}
+.children-v-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// colors
+
+.color-primary {
+  color: @color-primary !important;
+  border-color: @color-primary !important;
+}
+
+.color-info {
+  color: @color-info !important;
+  border-color: @color-info !important;
+}
+.color-success {
+  color: @color-success !important;
+  border-color: @color-success !important;
+}
+
+.color-danger {
+  color: @color-danger !important;
+  border-color: @color-danger !important;
 }
