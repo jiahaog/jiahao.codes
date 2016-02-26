@@ -77,7 +77,7 @@ function workDOM() {
         <h1 className="title">Skills</h1>
         <div className="jh-container">
             {skills.map((details, index) => {
-                return <section key={`skills-${index}`} className="section">
+                return <section key={`skills-${index}`} className="wow fadeInUp section">
                     {skillNode(details)}
                 </section>
             })}

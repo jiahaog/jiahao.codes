@@ -10,7 +10,7 @@ function workNode(details) {
     const {company, position, startDate, endDate, highlights, website, keywords} = details;
     const {startYear, endYear} = getYears(startDate, endDate);
 
-    return <div className="container">
+    return <div className="wow fadeInUp container">
         <div className="columns">
             <div className="column">
                 <h2 className="title is-4">

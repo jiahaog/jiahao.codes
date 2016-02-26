@@ -6,7 +6,7 @@ const photographyProjects = resume.photography;
 
 function imageNode(details) {
     const {name, website, imageName, summary} = details;
-    return <div key={`photography-${imageName}`} className="jh-container is-text-centered">
+    return <div key={`photography-${imageName}`} className="wow fadeInUp jh-container is-text-centered">
         <div className="photo-showcase-container container">
             <a target="_blank" href={website}>
                 <div className="photo-container">

@@ -16,9 +16,14 @@
   </script>
 
   <!-- build:css css/combined.css -->
+  <link href="./../node_modules/animate.css/animate.min.css" rel="stylesheet">
   <link href="./../node_modules/font-awesome/css/font-awesome.css" rel="stylesheet">
   <link href="./../node_modules/bulma/css/bulma.css" rel="stylesheet">
   <link href="./less/main.less" rel="stylesheet">
+  <!-- endbuild -->
+
+  <!-- build:js js/vendor.js -->
+  <script src="./../node_modules/wow.js/dist/wow.js"></script>
   <!-- endbuild -->
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -36,6 +41,7 @@
 <body>
 
 <script>
+  new WOW().init();
   // add touch and no touch class to css
   document.documentElement.className +=
     (("ontouchstart" in document.documentElement) ? ' touch' : ' no-touch');

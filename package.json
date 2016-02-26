@@ -13,6 +13,7 @@
     "url": "git+https://github.com/jiahaog/jiahaog.github.io.git"
   },
   "devDependencies": {
+    "animate.css": "^3.5.1",
     "babel-cli": "^6.3.17",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
@@ -45,7 +46,8 @@
     "vinyl-buffer": "^1.0.0",
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.6.1",
-    "waypoints": "^4.0.0"
+    "waypoints": "^4.0.0",
+    "wow.js": "^1.1.2"
   },
   "babel": {
     "presets": [

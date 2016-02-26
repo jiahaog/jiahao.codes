@@ -70,6 +70,7 @@ gulp.task('useref', () => {
             cascade: false
         })))
         .pipe(gulpif('*.css', minifyCss()))
+        .pipe(gulpif('*.js', uglify()))
         .pipe(gulp.dest('dist'))
         .pipe(browserSync.reload({
             stream: true

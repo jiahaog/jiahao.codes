@@ -22,7 +22,7 @@ function projectsDOM() {
     const projectNodes = projects.map(project => {
         const {name, gitHubUser, gitHubRepo, summary, startDate, endDate, keywords, screenshots, website} = project;
         const {startYear, endYear} = getYears(startDate, endDate);
-        return <section className="section" key={name}>
+        return <section className="wow fadeInUp section" key={name}>
             <div className="container">
                 <div className="columns">
                     <div className="column">

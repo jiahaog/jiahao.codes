@@ -10,7 +10,7 @@ const preUniversity = resume.education[1];
 function universityDOM() {
     const {institution, area, studyType, track, startDate, endDate, courses, highlights} = university;
     const {startYear, endYear} = getYears(startDate, endDate);
-    return <section className="section">
+    return <section className="wow fadeInUp section">
         <div className="container">
             <div className="columns">
                 <div className="column">
@@ -41,7 +41,7 @@ function universityDOM() {
 function preUniversityDOM() {
     const {institution, area, studyType, track, startDate, endDate, courses, highlights} = preUniversity;
     const {startYear, endYear} = getYears(startDate, endDate);
-    return <section className="section">
+    return <section className="wow fadeInUp section">
         <div className="container">
             <div className="columns">
                 <div className="column">
