@@ -19,15 +19,15 @@ function keywordNodes(level, proficiency) {
     let colorModifier;
     switch (proficiency) {
         case 0:
-            proficiencyStr = '+++';
+            proficiencyStr = <span><i className="fa fa-star"/></span>;
             colorModifier = 'color-primary';
             break;
         case 1:
-            proficiencyStr = '++';
+            proficiencyStr = <span><i className="fa fa-star"/><i className="fa fa-star"/></span>;
             colorModifier = 'color-info';
             break;
         default:
-            proficiencyStr = '+';
+            proficiencyStr = <span><i className="fa fa-star"/><i className="fa fa-star"/><i className="fa fa-star"/></span>;
             colorModifier = 'color-success';
             break;
     }
