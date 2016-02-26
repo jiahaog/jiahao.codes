@@ -6,7 +6,7 @@ const photographyProjects = resume.photography;
 
 function imageNode(details) {
     const {name, website, imageName, summary} = details;
-    return <div key={`photography-${imageName}`} className="jh-container is-centered">
+    return <div key={`photography-${imageName}`} className="jh-container is-text-centered">
         <div className="photo-showcase-container container">
             <a target="_blank" href={website}>
                 <div className="photo-container">
@@ -29,7 +29,7 @@ function imageNode(details) {
 }
 
 function photographyDOM() {
-    return <section className="jh-container is-centered">
+    return <section className="jh-container is-text-centered">
         <h1 className="title">Photography</h1>
         <h2 className="subtitle">
             Nikon D610 | 50mm <span className="f-number-symbol">f</span>1.8 | 28mm <span

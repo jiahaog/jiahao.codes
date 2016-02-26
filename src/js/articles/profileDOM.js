@@ -15,7 +15,7 @@ function profileNode(details) {
 }
 
 function profileDOM() {
-    return <section className="jh-container is-centered">
+    return <section className="jh-container is-text-centered">
         <h1 className="title">Profiles</h1>
         <h2 className="subtitle">
 

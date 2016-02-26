@@ -115,7 +115,7 @@ class ContentDetails extends React.Component {
     render() {
         return <div>
             {this.showContent()}
-            <div id="whitespace-placeholder" className="continue-scroll-placeholder is-centered">
+            <div id="whitespace-placeholder" className="continue-scroll-placeholder is-text-centered">
                 <i className="scroll-icon fa fa-angle-down"/>
             </div>
             {this.maybeShowAll()}
