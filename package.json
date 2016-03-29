@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "gulp watch",
-    "build": "gulp build"
+    "build": "gulp build",
+    "release": "gulp deploy"
   },
   "repository": {
     "type": "git",
