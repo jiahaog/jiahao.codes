@@ -141,7 +141,8 @@ gulp.task('deploy', () => {
     // todo figure out bug why can't I do deploy with ['build'] as a prerequisite
     return gulp.src(['./dist/**/*', './CNAME'])
         .pipe(ghPages({
-            branch: 'master'
+            branch: 'master',
+            remoteUrl : 'git@github.com:jiahaog/jiahaog.github.io.git'
         }));
 });
 
