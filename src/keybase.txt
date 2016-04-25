@@ -1,0 +1,54 @@
+==================================================================
+https://keybase.io/jiahaog
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://jiahaog.com
+  * I am jiahaog (https://keybase.io/jiahaog) on keybase.
+  * I have a public key ASCeohb3BSZn72idBM1C25akIW3ASx0setjWBI1OguvJNwo
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "01209ea216f7052667ef689d04cd42db96a4216dc04b1d2c7ad8d6048d4e82ebc9370a",
+            "host": "keybase.io",
+            "kid": "01209ea216f7052667ef689d04cd42db96a4216dc04b1d2c7ad8d6048d4e82ebc9370a",
+            "uid": "f23a4ca483896d3374aa4d85a2a7c719",
+            "username": "jiahaog"
+        },
+        "service": {
+            "hostname": "jiahaog.com",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "client": {
+        "name": "keybase.io go client",
+        "version": "1.0.14"
+    },
+    "ctime": 1461599073,
+    "expire_in": 504576000,
+    "merkle_root": {
+        "ctime": 1461599039,
+        "hash": "4ed92f7a36485e7c9af00b5b9d4c50d9f5005bc4446fe9af829288e27317ad2645395b42a3605bf60fffc4221631ae350d764b4bf3026dc31e4b17859c18664f",
+        "seqno": 450683
+    },
+    "prev": "3c8b2e943c516437b8ad4f6b35ddacd05d3277a31f60d4cd28af742360cfa821",
+    "seqno": 7,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+g6Rib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgnqIW9wUmZ+9onQTNQtuWpCFtwEsdLHrY1gSNToLryTcKp3BheWxvYWTFAvJ7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwOWVhMjE2ZjcwNTI2NjdlZjY4OWQwNGNkNDJkYjk2YTQyMTZkYzA0YjFkMmM3YWQ4ZDYwNDhkNGU4MmViYzkzNzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwOWVhMjE2ZjcwNTI2NjdlZjY4OWQwNGNkNDJkYjk2YTQyMTZkYzA0YjFkMmM3YWQ4ZDYwNDhkNGU4MmViYzkzNzBhIiwidWlkIjoiZjIzYTRjYTQ4Mzg5NmQzMzc0YWE0ZDg1YTJhN2M3MTkiLCJ1c2VybmFtZSI6ImppYWhhb2cifSwic2VydmljZSI6eyJob3N0bmFtZSI6ImppYWhhb2cuY29tIiwicHJvdG9jb2wiOiJodHRwczoifSwidHlwZSI6IndlYl9zZXJ2aWNlX2JpbmRpbmciLCJ2ZXJzaW9uIjoxfSwiY2xpZW50Ijp7Im5hbWUiOiJrZXliYXNlLmlvIGdvIGNsaWVudCIsInZlcnNpb24iOiIxLjAuMTQifSwiY3RpbWUiOjE0NjE1OTkwNzMsImV4cGlyZV9pbiI6NTA0NTc2MDAwLCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTQ2MTU5OTAzOSwiaGFzaCI6IjRlZDkyZjdhMzY0ODVlN2M5YWYwMGI1YjlkNGM1MGQ5ZjUwMDViYzQ0NDZmZTlhZjgyOTI4OGUyNzMxN2FkMjY0NTM5NWI0MmEzNjA1YmY2MGZmZmM0MjIxNjMxYWUzNTBkNzY0YjRiZjMwMjZkYzMxZTRiMTc4NTljMTg2NjRmIiwic2Vxbm8iOjQ1MDY4M30sInByZXYiOiIzYzhiMmU5NDNjNTE2NDM3YjhhZDRmNmIzNWRkYWNkMDVkMzI3N2EzMWY2MGQ0Y2QyOGFmNzQyMzYwY2ZhODIxIiwic2Vxbm8iOjcsInRhZyI6InNpZ25hdHVyZSJ9o3NpZ8RA6zserJv5XGeos5wLkJcgsdEOnoyXQGiTcdXWMatYoZUM0k10bmhkae6nLfwxNbeKNa7/JvFMs2vuqYm29647C6hzaWdfdHlwZSCjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jiahaog
+
+==================================================================

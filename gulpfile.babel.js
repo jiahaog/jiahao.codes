@@ -112,13 +112,13 @@ gulp.task('svg', () => {
         .pipe(gulp.dest('dist/svg'))
 });
 
-gulp.task('favicon', () => {
-    return gulp.src(['src/favicon.ico', 'src/favicon-152.png'])
+gulp.task('misc', () => {
+    return gulp.src(['src/favicon.ico', 'src/favicon-152.png', 'src/keybase.txt'])
         .pipe(gulp.dest('dist'))
 });
 
 gulp.task('build', callback => {
-    runSequence('clean', ['useref', 'js', 'img', 'fonts', 'svg', 'favicon'], callback);
+    runSequence('clean', ['useref', 'js', 'img', 'fonts', 'svg', 'misc'], callback);
 });
 
 gulp.task('browserSync', () => {
@@ -131,7 +131,7 @@ gulp.task('browserSync', () => {
     })
 });
 
-gulp.task('watch', ['browserSync', 'useref', 'img', 'fonts', 'svg', 'favicon'], () => {
+gulp.task('watch', ['browserSync', 'useref', 'img', 'fonts', 'svg', 'misc'], () => {
     watchJs();
     gulp.watch('src/less/**/*.less', ['useref']);
     gulp.watch('src/**/*.html', ['useref']);
