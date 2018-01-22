@@ -6,12 +6,17 @@ SHELL := bash
 .SUFFIXES:
 
 .PHONY: start
-start:
+start: clean
 	bundle exec jekyll serve
 
 .PHONY: install
 install:
 	bundle install
 
-build:
+.PHONY: build
+build: clean
 	bundle exec jekyll build
+
+.PHONY: clean
+clean:
+	bundle exec jekyll clean
