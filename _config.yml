@@ -22,3 +22,5 @@ author:
 plugins:
   - jekyll-paginate
   - kramdown
+
+future: true
