@@ -1,31 +1,28 @@
 # Permalinks
-permalink:           pretty
+permalink: pretty
 
 # Setup
-title:               Hyde
-tagline:             A Jekyll theme
-description:         >
-  A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a>
-  theme that pairs a prominent sidebar with uncomplicated content.
-  Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.
-url:                 http://hyde.getpoole.com
+title: Jia Hao
+tagline: My Blog
+description:         Hello!
+url:                 http://jiahaog.com
 paginate:            5
 baseurl:             ""
 
 # Assets
 sass:
-  style:            :compressed
+  style: :compressed
 
 # About/contact
 author:
-  name:              Mark Otto
-  url:               https://twitter.com/mdo
-  email:             markdotto@gmail.com
+  name: Jia Hao Goh
+  url: https://twitter.com/jiahaog
+  email:
 
 # Custom vars
-version:             2.1.0
+version: 2.1.0
 github:
-  repo:              https://github.com/poole/hyde
+  repo: https://github.com/jiahaog/jiahaog.github.io
 
 # Gems
 gems:
