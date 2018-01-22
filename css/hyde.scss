@@ -1,3 +1,7 @@
+---
+# Use a comment to ensure Jekyll reads the file to be transformed into CSS later
+# only main files contain this front matter, not partials.
+---
 /*
  *  __                  __
  * /\ \                /\ \
@@ -13,6 +17,7 @@
  * https://github.com/poole/hyde.
  */
 
+@import "variables";
 
 /*
  * Contents
@@ -24,7 +29,6 @@
  * Themes
  */
 
-
 /*
  * Global resets
  *
@@ -32,7 +36,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
@@ -45,7 +49,6 @@ html {
   }
 }
 
-
 /*
  * Sidebar
  *
@@ -57,7 +60,7 @@ html {
   text-align: center;
   padding: 2rem 1rem;
   color: rgba(255,255,255,.5);
-  background-color: #202020;
+  background-color: $orange;
 }
 @media (min-width: 48em) {
   .sidebar {
@@ -79,7 +82,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  font-family: 'Abril Fatface', serif;
   font-size: 3.25rem;
 }
 
@@ -108,12 +111,11 @@ a.sidebar-nav-item:focus {
 @media (min-width: 48em) {
   .sidebar-sticky {
     position: absolute;
-    right:  1rem;
+    right: 1rem;
     bottom: 1rem;
-    left:   1rem;
+    left: 1rem;
   }
 }
-
 
 /* Container
  *
@@ -122,12 +124,12 @@ a.sidebar-nav-item:focus {
  */
 
 .container {
-  padding-left:  1rem;
+  padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .content {
-  padding-top:    4rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
@@ -145,7 +147,6 @@ a.sidebar-nav-item:focus {
     margin-right: 4rem;
   }
 }
-
 
 /*
  * Reverse layout
@@ -171,8 +172,6 @@ a.sidebar-nav-item:focus {
   }
 }
 
-
-
 /*
  * Themes
  *
@@ -184,7 +183,7 @@ a.sidebar-nav-item:focus {
 
 /* Red */
 .theme-base-08 .sidebar {
-  background-color: #ac4142;
+  background-color: #ffc466;
 }
 .theme-base-08 .content a,
 .theme-base-08 .related-posts li a:hover {
