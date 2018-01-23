@@ -124,7 +124,7 @@ export const split = (inp, delimiter) => inp.split(delimiter);
 export default makeHttpCall;
 ```
 
-Simply call `jest.mock` with a second argument, using [`require.requireActual`](https://facebook.github.io/jest/docs/en/api.html#requirerequireactualmodulename) to retain the value of the original function. Props to [Zhu Liang](https://paradite.com/) for teaching me how to do this:
+Simply call `jest.mock` with a second argument, using [`require.requireActual`](https://facebook.github.io/jest/docs/en/api.html#requirerequireactualmodulename) to retain the value of the original function. Props to [Paradite](https://paradite.com/) for teaching me how to do this:
 
 ```javascript
 // module.test.js
