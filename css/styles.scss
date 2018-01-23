@@ -252,3 +252,15 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+.profile-icon {
+  width: 1.7rem;
+  height: 1.7rem;
+  display: inline-block;
+}
+
+// The key looks too far off from the other elements because of it's non-regular shape, so we shift
+// it back a little
+.profile-link:last-child {
+  margin-left: -0.2rem;
+}
