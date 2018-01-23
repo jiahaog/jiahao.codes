@@ -19,10 +19,6 @@ author:
   url: https://twitter.com/jiahaog
   email:
 
-plugins:
-  - jekyll-paginate
-  - kramdown
-
 future: true
 
 exclude:
