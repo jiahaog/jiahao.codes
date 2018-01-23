@@ -13,13 +13,30 @@ baseurl:             ""
 sass:
   style: :compressed
 
-# About/contact
 author:
   name: Jia Hao Goh
   url: https://twitter.com/jiahaog
   email:
 
 future: true
+
+responsive_image:
+  template: _includes/responsive-image.html
+
+  output_path_format: assets/img/resized/%{filename}-%{width}x%{height}.%{extension}
+  save_to_source: false
+
+  sizes:
+    - width: 240
+    - width: 480
+    # - width: 640
+    # - width: 1280
+    # - width: 1920
+    # - width: 2560
+
+collections:
+  albums:
+    output: true
 
 exclude:
   - Gemfile
