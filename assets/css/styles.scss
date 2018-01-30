@@ -18,10 +18,22 @@
 .post {
   border-bottom: 1px solid #eee;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
   padding-top: 1rem;
 }
 
 .index-excerpt {
   padding-top: 1rem;
+}
+
+.index-item {
+  padding: 1rem;
+}
+
+.index-item:hover {
+  background-color: #F8F8F7;
+}
+
+.index-item-link:hover {
+  text-decoration: none;
+  color: $blue;
 }

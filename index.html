@@ -6,10 +6,10 @@ title: Home
 <div class="row justify-content-center">
   <div class="blog-content col">
     {% for post in paginator.posts %}
-    <article class="post container">
+    <article class="index-item post">
       <div class="row align-items-center">
         <h2 class="col">
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          <a class="index-item-link" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         </h2>
         <code>
           <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date col-auto">{{ post.date | date_to_string }}</time>
