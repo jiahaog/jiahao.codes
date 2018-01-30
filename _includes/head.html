@@ -1,0 +1,21 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    {% if page.title == "Home" %}
+      {{ site.title }} &middot; {{ site.tagline }}
+    {% else %}
+      {{ page.title }} &middot; {{ site.title }}
+    {% endif %}
+  </title>
+
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+
+  <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
+  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/atom.xml">
+
+  {% if jekyll.environment == "production" %}
+    {% include ga.html %}
+  {% endif %}
+</head>
