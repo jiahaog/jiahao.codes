@@ -29,11 +29,12 @@
   padding: 1rem;
 }
 
-.index-item:hover {
-  background-color: #F8F8F7;
+.index-item-link {
+  color: $gray-900;
+  display: block;
 }
 
 .index-item-link:hover {
   text-decoration: none;
-  color: $blue;
+  background-color: #F8F8F7;
 }
