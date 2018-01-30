@@ -1,11 +1,13 @@
 permalink: none
 
 title: Jia Hao
+author:
+  twitter: jiahaog
 tagline: My Blog
-description:         Hello!
-url:                 https://jiahaog.com
-paginate:            5
-baseurl:             ""
+description: Thoughts of an engineer
+url: https://jiahaog.com
+paginate: 5
+baseurl: ""
 
 future: true
 
