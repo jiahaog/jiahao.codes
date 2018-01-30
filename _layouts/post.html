@@ -5,9 +5,14 @@ layout: default
 <div class="row justify-content-center">
   <div class="blog-content col">
     <article class="post">
-      <h1 class="post-title">{{ page.title }}</h1>
-      <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+      <h1 class="display-4">{{ page.title }}</h1>
+      <p class="lead">
+        {{ page.excerpt }}
+      </p>
       {{ content }}
+      <p class="text-right">
+        <em>Published <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time></em>
+      </p>
     </article>
   </div>
 </div>

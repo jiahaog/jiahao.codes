@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Mocking Modules with Jest
+excerpt: How to mock modules using Jest
 ---
 
 When I was working on building full stack web applications at [Grab](https://www.grab.com), I noticed that even though mocking function calls in Ruby on Rails is rather idiomatic, it is less so for the Javascript ecosystem. Sometimes, we might have some utility functions which makes a external HTTP call which we want to mock out in our tests, but how do we do it in Javascript?

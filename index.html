@@ -6,16 +6,15 @@ title: Home
 <div class="row justify-content-center">
   <div class="blog-content col">
     {% for post in paginator.posts %}
-    <article class="post">
-      <h2 class="post-title">
-        <a href="{{ site.baseurl }}{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </h1>
+    <article class="post container">
+      <div class="row align-items-center">
+        <h2 class="col">
+          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        </h2>
+        <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date col-auto">{{ post.date | date_to_string }}</time>
+      </div>
 
-      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-
-      {{ post.excerpt }}
+      <p class="index-excerpt">{{ post.excerpt }}</p>
     </article>
     {% endfor %}
   </div>
