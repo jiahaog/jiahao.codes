@@ -2,11 +2,15 @@
 layout: default
 ---
 
-<article class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
-  {{ content }}
-</article>
+<div class="row justify-content-center">
+  <div class="blog-content col">
+    <article class="post">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+      {{ content }}
+    </article>
+  </div>
+</div>
 
 {% if site.related_posts != empty %}
 <aside class="related">
