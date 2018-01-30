@@ -1,0 +1,23 @@
+{
+  "name": "jiahaog.com",
+  "description": "My Blog",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiahaog/jiahaog.github.io.git"
+  },
+  "keywords": [],
+  "author": "Jia Hao Goh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jiahaog/jiahaog.github.io/issues"
+  },
+  "homepage": "https://jiahaog.com"
+}

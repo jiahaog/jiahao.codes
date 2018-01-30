@@ -13,6 +13,8 @@ future: true
 
 sass:
   style: :compressed
+  load_paths:
+    - node_modules/bootstrap/scss
 
 responsive_image:
   template: _includes/responsive-image.html
@@ -37,3 +39,4 @@ exclude:
   - Gemfile.lock
   - Makefile
   - README.md
+  - node_modules
