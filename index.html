@@ -3,7 +3,8 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
+<div class="row justify-content-center">
+<div class="blog-content col">
   {% for post in paginator.posts %}
   <article class="post">
     <h1 class="post-title">
@@ -17,6 +18,7 @@ title: Home
     {{ post.excerpt }}
   </article>
   {% endfor %}
+</div>
 </div>
 
 <div class="pagination">
