@@ -11,6 +11,9 @@ baseurl: ""
 
 future: true
 
+sass:
+  style: :compressed
+
 responsive_image:
   template: _includes/responsive-image.html
 
