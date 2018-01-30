@@ -4,21 +4,21 @@ title: Home
 ---
 
 <div class="row justify-content-center">
-<div class="blog-content col">
-  {% for post in paginator.posts %}
-  <article class="post">
-    <h2 class="post-title">
-      <a href="{{ site.baseurl }}{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+  <div class="blog-content col">
+    {% for post in paginator.posts %}
+    <article class="post">
+      <h2 class="post-title">
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
 
-    {{ post.excerpt }}
-  </article>
-  {% endfor %}
-</div>
+      {{ post.excerpt }}
+    </article>
+    {% endfor %}
+  </div>
 </div>
 
 <div class="pagination">
