@@ -13,7 +13,7 @@ export default function BlogIndex(props) {
     <div>
       <Helmet title={get(props, 'data.site.siteMetadata.title')} />
       <Bio />
-      {posts.map(post => {
+      {posts.map((post) => {
         if (post.node.path !== '/404/') {
           const title = get(post, 'node.frontmatter.title') || post.node.path;
           return (

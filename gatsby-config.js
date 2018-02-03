@@ -5,26 +5,26 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
         path: `${__dirname}/src/pages`,
         name: 'pages',
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
+      resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-images`,
+            resolve: 'gatsby-remark-images',
             options: {
               maxWidth: 590,
             },
           },
           {
-            resolve: `gatsby-remark-responsive-iframe`,
+            resolve: 'gatsby-remark-responsive-iframe',
             options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
+              wrapperStyle: 'margin-bottom: 1.0725rem',
             },
           },
           'gatsby-remark-prismjs',
@@ -33,15 +33,15 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: 'ADD YOUR TRACKING ID HERE',
       },
     },
-    `gatsby-plugin-offline`,
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-offline',
+    'gatsby-plugin-react-helmet',
   ],
 };

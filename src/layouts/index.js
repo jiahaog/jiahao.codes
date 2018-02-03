@@ -8,13 +8,13 @@ class Template extends React.Component {
     if (location.pathname === '/') {
       header = (
         <h1>
-          <Link to={'/'}>Gatsby Starter Blog</Link>
+          <Link to="/">Gatsby Starter Blog</Link>
         </h1>
       );
     } else {
       header = (
         <h3>
-          <Link to={'/'}>Gatsby Starter Blog</Link>
+          <Link to="/">Gatsby Starter Blog</Link>
         </h3>
       );
     }
