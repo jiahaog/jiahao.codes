@@ -25,7 +25,7 @@
     "lodash": "^4.17.4"
   },
   "devDependencies": {
-    "prettier": "^1.6.1"
+    "prettier": "^1.10.2"
   },
   "homepage": "https://github.com/noahg/gatsby-starter-blog-no-styles#readme",
   "keywords": [
@@ -41,7 +41,7 @@
     "start": "gatsby develop",
     "lint": "./node_modules/.bin/eslint --ext .js,.jsx --ignore-pattern public .",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
+    "format": "prettier --write 'src/**/*.js'",
     "develop": "gatsby develop",
     "build": "gatsby build",
     "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"

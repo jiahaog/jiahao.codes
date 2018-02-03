@@ -24,7 +24,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
               }
             }
           }
-        `
+        `,
       ).then(result => {
         if (result.errors) {
           console.log(result.errors);
@@ -41,7 +41,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             },
           });
         });
-      })
+      }),
     );
   });
 };
