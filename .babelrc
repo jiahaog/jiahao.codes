@@ -1,4 +1,9 @@
 {
-  "presets": ['react', 'es2015', 'stage-1'],
-  "plugins": ['add-module-exports']
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", "safari >= 7"]
+      }
+    }]
+  ]
 }
