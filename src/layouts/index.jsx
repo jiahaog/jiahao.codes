@@ -26,7 +26,7 @@ export default function Template({ location, children }) {
 
 Template.propTypes = {
   children: React.PropTypes.func.isRequired,
-  location: React.PropTypes.shapeOf({
+  location: React.PropTypes.shape({
     pathname: React.PropTypes.string.isRequired,
   }).isRequired,
 };
