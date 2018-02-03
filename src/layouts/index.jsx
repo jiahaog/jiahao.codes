@@ -17,7 +17,7 @@ export default function Template({ location, children }) {
     );
   }
   return (
-    <div>
+    <div style={{ margin: '3rem auto', maxWidth: 600 }}>
       {header}
       {children()}
     </div>

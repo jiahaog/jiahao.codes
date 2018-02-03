@@ -4,6 +4,7 @@ module.exports = {
     author: 'Kyle Mathews',
   },
   plugins: [
+    'gatsby-plugin-typography',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
