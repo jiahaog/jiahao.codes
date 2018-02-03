@@ -8,6 +8,34 @@ import {
   site as sitePropType,
 } from '../proptypes';
 
+function IndexContent({ posts }) {
+  return (
+    <div>
+      <Bio />
+      {posts.map(({ title, path, date, excerpt }) => (
+        <div key={path}>
+          <h3>
+            <Link to={path}>{title}</Link>
+          </h3>
+          <small>{date}</small>
+          <p dangerouslySetInnerHTML={{ __html: excerpt }} />
+        </div>
+      ))}
+    </div>
+  );
+}
+
+IndexContent.propTypes = {
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
+      date: PropTypes.string.isRequired,
+      excerpt: PropTypes.string.isRequired,
+      path: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    }),
+  ).isRequired,
+};
+
 export default function BlogIndex({
   data: {
     site: { siteMetadata: { title: siteTitle } },
@@ -17,24 +45,16 @@ export default function BlogIndex({
   return (
     <div>
       <Helmet title={siteTitle} />
-      <Bio />
-      {posts.map((post) => {
-        if (post.node.path === '/404/') {
-          return '';
-        }
-
-        const { title, path, date, excerpt } = post.node.frontmatter;
-
-        return (
-          <div key={path}>
-            <h3>
-              <Link to={path}>{title}</Link>
-            </h3>
-            <small>{date}</small>
-            <p dangerouslySetInnerHTML={{ __html: excerpt }} />
-          </div>
-        );
-      })}
+      <IndexContent
+        posts={posts.map(
+          ({ node: { excerpt, frontmatter: { title, path, date } } }) => ({
+            title,
+            path,
+            date,
+            excerpt,
+          }),
+        )}
+      />
     </div>
   );
 }

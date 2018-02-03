@@ -7,6 +7,27 @@ import {
 } from '../proptypes';
 import Bio from '../components/Bio';
 
+function BlogPostContent({ title, date, html }) {
+  return (
+    <div>
+      <h1>{title}</h1>
+      <p>{date}</p>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <hr />
+      <Bio />
+    </div>
+  );
+}
+
+BlogPostContent.propTypes = {
+  date: PropTypes.string.isRequired,
+  html: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+};
+
+// Ideally we separate all the following things into a separate file, but it's
+// hard to do with the way the `pageQuery` is parsed
+
 export default function BlogPostTemplate({
   data: {
     site: { siteMetadata: { title: siteTitle } },
@@ -16,11 +37,7 @@ export default function BlogPostTemplate({
   return (
     <div>
       <Helmet title={`${title} | ${siteTitle}`} />
-      <h1>{title}</h1>
-      <p>{date}</p>
-      <div dangerouslySetInnerHTML={{ __html: html }} />
-      <hr />
-      <Bio />
+      <BlogPostContent title={title} date={date} html={html} />
     </div>
   );
 }
