@@ -2,5 +2,10 @@ extends:
   - airbnb
   - prettier
   - prettier/react
+rules:
+  # remove <Link/> from anchor-is-valid
+  jsx-a11y/anchor-is-valid:
+    - error
+    - components: []
 settings:
   import/core-modules: ['react', 'config']
