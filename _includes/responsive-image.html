@@ -1,7 +1,0 @@
-{% capture srcset %}
-  {% for i in resized %}
-    /{{ i.path }} {{ i.width }}w,
-  {% endfor %}
-{% endcapture %}
-
-<img src="/{{ path }}" alt="{{ alt }}" srcset="{{ srcset | strip_newlines }}">
