@@ -1,25 +1,36 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Helmet from 'react-helmet';
-import Link from 'gatsby-link';
-import get from 'lodash/get';
 
+import {
+  markdownRemark as markdownRemarkPropType,
+  site as sitePropType,
+} from '../proptypes';
 import Bio from '../components/Bio';
 
-export default function BlogPostTemplate(props) {
-  const post = props.data.markdownRemark;
-  const siteTitle = get(props, 'data.site.siteMetadata.title');
-
+export default function BlogPostTemplate({
+  data: {
+    site: { siteMetadata: { title: siteTitle } },
+    markdownRemark: { frontmatter: { title, date }, html },
+  },
+}) {
   return (
     <div>
-      <Helmet title={`${post.frontmatter.title} | ${siteTitle}`} />
-      <h1>{post.frontmatter.title}</h1>
-      <p>{post.frontmatter.date}</p>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <Helmet title={`${title} | ${siteTitle}`} />
+      <h1>{title}</h1>
+      <p>{date}</p>
+      <div dangerouslySetInnerHTML={{ __html: html }} />
       <hr />
       <Bio />
     </div>
   );
 }
+
+BlogPostTemplate.propTypes = {
+  data: PropTypes.shape({
+    site: sitePropType,
+    markdownRemark: markdownRemarkPropType,
+  }).isRequired,
+};
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
@@ -33,6 +44,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
+        path
         title
         date(formatString: "MMMM DD, YYYY")
       }

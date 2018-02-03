@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
 import Bio from '../components/Bio';
+import {
+  allMarkdownRemark as allMarkdownRemarkPropType,
+  site as sitePropType,
+} from '../proptypes';
 
 export default function BlogIndex({
   data: {
@@ -35,34 +39,10 @@ export default function BlogIndex({
   );
 }
 
-const {
-  shape: ptShape,
-  string: ptString,
-  arrayOf: ptArrayOf,
-} = React.PropTypes;
-
 BlogIndex.propTypes = {
-  data: ptShape({
-    site: ptShape({
-      siteMetadata: ptShape({
-        title: React.PropTypes.string.isRequired,
-      }).isRequired,
-    }).isRequired,
-    allMarkdownRemark: ptShape({
-      edges: ptArrayOf(
-        ptShape({
-          node: ptShape({
-            path: ptString,
-            frontmatter: ptShape({
-              excerpt: ptString,
-              title: ptString.isRequired,
-              date: ptString.isRequired,
-              path: ptString.isRequired,
-            }).isRequired,
-          }).isRequired,
-        }).isRequired,
-      ).isRequired,
-    }).isRequired,
+  data: PropTypes.shape({
+    site: sitePropType,
+    allMarkdownRemark: allMarkdownRemarkPropType,
   }).isRequired,
 };
 
