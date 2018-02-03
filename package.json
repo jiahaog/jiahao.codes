@@ -23,7 +23,8 @@
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.28",
     "gatsby-transformer-sharp": "^1.6.16",
-    "lodash": "^4.17.4"
+    "lodash": "^4.17.4",
+    "typography-theme-fairy-gates": "^0.15.11"
   },
   "devDependencies": {
     "eslint": "^4.17.0",
