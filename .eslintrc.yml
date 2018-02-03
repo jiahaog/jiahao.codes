@@ -1,1 +1,6 @@
-extends: airbnb
+extends:
+  - airbnb
+  - prettier
+  - prettier/react
+settings:
+  import/core-modules: ['react', 'config']
