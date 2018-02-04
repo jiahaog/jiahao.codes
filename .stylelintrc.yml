@@ -1,0 +1,5 @@
+extends: stylelint-config-standard
+
+rules:
+  # TODO: This messes with prettier, there should be a better way to integrate the tools
+  declaration-colon-newline-after: null

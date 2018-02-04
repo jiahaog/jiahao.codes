@@ -3,6 +3,11 @@ a {
   color: #5c6bc0;
 }
 
+h1 > a,
+h3 > a {
+  background-image: none;
+}
+
 a:hover {
   color: #26418f;
 }
@@ -24,11 +29,6 @@ p > a:hover {
 
 code {
   line-height: 1.2rem;
-}
-
-h1 > a,
-h3 > a {
-  background-image: none;
 }
 
 pre {
