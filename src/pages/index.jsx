@@ -47,11 +47,16 @@ export default function BlogIndex({
       <Helmet title={siteTitle} />
       <IndexContent
         posts={posts.map(
-          ({ node: { excerpt, frontmatter: { title, path, date } } }) => ({
+          ({
+            node: {
+              excerpt,
+              frontmatter: { excerpt: frontmatterExcerpt, title, path, date },
+            },
+          }) => ({
             title,
             path,
             date,
-            excerpt,
+            excerpt: frontmatterExcerpt || excerpt,
           }),
         )}
       />
@@ -82,6 +87,7 @@ export const pageQuery = graphql`
             date(formatString: "DD MMMM, YYYY")
           }
           frontmatter {
+            excerpt
             title
           }
         }
