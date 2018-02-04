@@ -4,7 +4,7 @@ Personal *Hype-driven* Web Page
 
 ## Installation
 
-With [Bundler](https://bundler.io/) installed,
+With [Node.js](https://nodejs.org/) installed,
 
 ```bash
 make install
@@ -16,7 +16,7 @@ make install
 make start
 ```
 
-## Publishing
+## Build
 
 Files will be built to `public/`
 
