@@ -1,7 +1,5 @@
 import React from 'react';
 
-import profilePic from './profile-pic.jpg';
-
 export default function Bio() {
   return (
     <div>

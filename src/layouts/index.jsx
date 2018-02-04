@@ -10,13 +10,13 @@ export default function Template({ location, children }) {
   if (location.pathname === '/') {
     header = (
       <h1>
-        <Link to="/">Gatsby Starter Blog</Link>
+        <Link to="/">Jia Hao</Link>
       </h1>
     );
   } else {
     header = (
       <h3>
-        <Link to="/">Gatsby Starter Blog</Link>
+        <Link to="/">Jia Hao</Link>
       </h3>
     );
   }

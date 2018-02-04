@@ -1,6 +1,6 @@
-# Blog
+# [jiahaog.com](https://jiahaog.com)
 
-My Blog
+Personal *Hype-driven* Web Page
 
 ## Installation
 
@@ -18,7 +18,7 @@ make start
 
 ## Publishing
 
-Files will be built to `_site/`
+Files will be built to `public/`
 
 ```bash
 make build

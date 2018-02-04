@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-starter-blog-no-styles",
-  "description": "Starter Gatsby Blog No Styles",
+  "name": "jiahaog.com",
+  "description": "Personal Hype-driven Web Page",
   "version": "1.0.0",
-  "author": "Noah Glusenkamp <noah.glusenkamp@gmail.com>",
+  "author": "Jia Hao Goh",
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby-starter-blog/issues"
+    "url": "https://github.com/jiahaog/jiahaog/issues"
   },
   "dependencies": {
     "gatsby": "^1.9.158",
@@ -39,15 +39,18 @@
     "eslint-plugin-react": "^7.6.1",
     "prettier": "^1.10.2"
   },
-  "homepage": "https://github.com/noahg/gatsby-starter-blog-no-styles#readme",
+  "homepage": "https://jiahaog.com",
   "keywords": [
-    "gatsby"
+    "blog",
+    "gatsby",
+    "pwa",
+    "react",
+    "webpage"
   ],
   "license": "MIT",
-  "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noahg/gatsby-starter-blog-no-styles.git"
+    "url": "git+https://github.com/jiahaog/jiahaog.git"
   },
   "scripts": {
     "start": "gatsby develop",
@@ -56,7 +59,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write 'src/**/*.js'",
     "develop": "gatsby develop",
-    "build": "gatsby build",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js"
+    "build": "gatsby build"
   }
 }
