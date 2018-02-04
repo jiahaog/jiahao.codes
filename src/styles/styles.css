@@ -1,9 +1,37 @@
+a {
+  color: #5c6bc0;
+}
+
+a:hover {
+  color: #26418f;
+}
+
+a:visited {
+  color: #26418f;
+}
+
+p > a:hover {
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0) 1px,
+    #1ca086 1px,
+    #1ca086 2px,
+    rgba(0, 0, 0, 0) 2px
+  );
+}
+
 code {
   line-height: 1.2rem;
 }
 
+h1 > a,
+h3 > a {
+  background-image: none;
+}
+
 pre {
-  background: 'hsla(0,0%,0%,0.04)';
+  background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
   line-height: 1rem;
   overflow: auto;
