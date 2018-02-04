@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 
 require('prismjs/themes/prism.css');
-require('../styles/styles.css');
+require('../styles/globals.css');
 
 function HomeLink({ showLarge }) {
   const Heading = `h${showLarge ? '1' : '3'}`;
