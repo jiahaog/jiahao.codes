@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import styled from 'styled-components';
 
 require('prismjs/themes/prism.css');
 require('../styles/styles.css');
@@ -19,12 +20,17 @@ HomeLink.propTypes = {
   showLarge: PropTypes.bool.isRequired,
 };
 
+const ContentDiv = styled.div`
+  margin: 3rem auto;
+  max-width: 600px;
+`;
+
 export default function Template({ location, children }) {
   return (
-    <div style={{ margin: '3rem auto', maxWidth: 600 }}>
+    <ContentDiv>
       <HomeLink showLarge={location.pathname === '/'} />
       {children()}
-    </div>
+    </ContentDiv>
   );
 }
 
