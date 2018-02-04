@@ -4,6 +4,7 @@ module.exports = {
     author: 'Kyle Mathews',
   },
   plugins: [
+    'gatsby-plugin-react-next',
     {
       resolve: `gatsby-plugin-typography`,
       options: {

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
 require('prismjs/themes/prism.css');
@@ -28,8 +29,8 @@ export default function Template({ location, children }) {
 }
 
 Template.propTypes = {
-  children: React.PropTypes.func.isRequired,
-  location: React.PropTypes.shape({
-    pathname: React.PropTypes.string.isRequired,
+  children: PropTypes.func.isRequired,
+  location: PropTypes.shape({
+    pathname: PropTypes.string.isRequired,
   }).isRequired,
 };
