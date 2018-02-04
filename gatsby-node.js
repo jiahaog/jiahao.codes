@@ -1,4 +1,3 @@
-const _ = require('lodash');
 const path = require('path');
 
 exports.createPages = ({ graphql, boundActionCreators: { createPage } }) =>
@@ -19,11 +18,11 @@ exports.createPages = ({ graphql, boundActionCreators: { createPage } }) =>
         }
       `).then((result) => {
         if (result.errors) {
-          console.log(result.errors);
+          console.error(result.errors);
           reject(result.errors);
         }
 
-        _.each(result.data.allMarkdownRemark.edges, (edge) => {
+        result.data.allMarkdownRemark.edges.forEach((edge) => {
           createPage({
             path: edge.node.frontmatter.path,
             component: blogPost,

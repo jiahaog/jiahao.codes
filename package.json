@@ -24,7 +24,6 @@
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.28",
     "gatsby-transformer-sharp": "^1.6.16",
-    "lodash": "^4.17.4",
     "prismjs": "^1.10.0",
     "prop-types": "^15.6.0",
     "typography": "^0.16.6",
