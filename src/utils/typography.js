@@ -13,7 +13,7 @@ theme.googleFonts = [
   },
 ];
 
-theme.overrideStyles = ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+theme.overrideStyles = () => ({
   code: {
     lineHeight: '1.2rem',
   },
