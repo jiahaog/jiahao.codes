@@ -13,19 +13,6 @@ theme.googleFonts = [
   },
 ];
 
-theme.overrideStyles = () => ({
-  code: {
-    lineHeight: '1.2rem',
-  },
-  pre: {
-    background: 'hsla(0,0%,0%,0.04)',
-    borderRadius: '3px',
-    lineHeight: '1rem',
-    overflow: 'auto',
-    padding: '1rem',
-  },
-});
-
 const typography = new Typography(theme);
 
 export default typography;

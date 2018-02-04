@@ -1,0 +1,16 @@
+code {
+  line-height: 1.2rem;
+}
+
+pre {
+  background: 'hsla(0,0%,0%,0.04)';
+  border-radius: 3px;
+  line-height: 1rem;
+  overflow: auto;
+  padding: 1rem;
+}
+
+/* Be consistent with the bottom margin for <p>s */
+pre[class*='language-'] {
+  margin-bottom: 1.45rem;
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'gatsby-link';
 
 require('prismjs/themes/prism.css');
+require('../styles/styles.css');
 
 export default function Template({ location, children }) {
   let header;
