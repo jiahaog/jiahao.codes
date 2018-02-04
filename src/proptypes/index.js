@@ -25,8 +25,3 @@ export const allMarkdownRemark = ptShape({
     }).isRequired,
   ).isRequired,
 }).isRequired;
-
-export const data = ptShape({
-  site,
-  allMarkdownRemark,
-}).isRequired;
