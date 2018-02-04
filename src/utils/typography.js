@@ -14,10 +14,13 @@ theme.googleFonts = [
 ];
 
 theme.overrideStyles = ({ adjustFontSizeTo, rhythm }, options, styles) => ({
+  code: {
+    lineHeight: '1.2rem',
+  },
   pre: {
-    color: 'green',
     background: 'hsla(0,0%,0%,0.04)',
-    'border-radius': '3px',
+    borderRadius: '3px',
+    lineHeight: '1rem',
     overflow: 'auto',
     padding: '1rem',
   },
