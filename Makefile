@@ -6,17 +6,17 @@ SHELL := bash
 .SUFFIXES:
 
 .PHONY: start
-start: clean
-	bundle exec jekyll serve
+start:
+	npm start
 
 .PHONY: install
 install:
-	bundle install
+	npm install
 
 .PHONY: build
-build: clean
-	JEKYLL_ENV=production bundle exec jekyll build
+build:
+	npm run build
 
-.PHONY: clean
-clean:
-	bundle exec jekyll clean
+.PHONY: lint
+lint:
+	npm run lint
