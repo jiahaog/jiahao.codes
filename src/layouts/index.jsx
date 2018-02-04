@@ -1,6 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+require('prismjs/themes/prism.css');
+
 export default function Template({ location, children }) {
   let header;
   if (location.pathname === '/') {
