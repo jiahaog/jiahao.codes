@@ -40,7 +40,9 @@
     "eslint-plugin-react": "^7.6.1",
     "prettier": "^1.10.2",
     "stylelint": "^8.4.0",
-    "stylelint-config-standard": "^18.0.0"
+    "stylelint-config-standard": "^18.0.0",
+    "stylelint-config-styled-components": "^0.1.1",
+    "stylelint-processor-styled-components": "^1.2.2"
   },
   "homepage": "https://jiahaog.com",
   "keywords": [
@@ -57,8 +59,8 @@
   },
   "scripts": {
     "start": "gatsby develop",
-    "lint": "eslint --ext .js --ext .jsx --ignore-pattern public . && stylelint src/**/*.css",
-    "lint:fix": "eslint --ext .js --ext .jsx --ignore-pattern public --fix . && stylelint --fix src/**/*.css",
+    "lint": "eslint --ext .js --ext .jsx --ignore-pattern public . && stylelint src/**/*.{css,js,jsx}",
+    "lint:fix": "eslint --ext .js --ext .jsx --ignore-pattern public --fix . && stylelint --fix src/**/*.{css,js,jsx}",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write 'src/**/*.js'",
     "build": "gatsby build"

@@ -1,4 +1,11 @@
-extends: stylelint-config-standard
+processors:
+  - stylelint-processor-styled-components
+
+extends:
+  - stylelint-config-standard
+  - stylelint-config-styled-components
+
+syntax: scss
 
 rules:
   # TODO: This messes with prettier, there should be a better way to integrate the tools
