@@ -6,9 +6,9 @@ import {
   markdownRemark as markdownRemarkPropType,
   site as sitePropType,
 } from '../proptypes';
-import BlogPost from '../components/BlogPost';
+import Post from '../components/Post';
 
-export default function BlogPostTemplate({
+export default function PostTemplate({
   data: {
     site: { siteMetadata: { title: siteTitle } },
     markdownRemark: { frontmatter: { title, date }, html },
@@ -17,12 +17,12 @@ export default function BlogPostTemplate({
   return (
     <div>
       <Helmet title={`${title} | ${siteTitle}`} />
-      <BlogPost title={title} date={date} html={html} />
+      <Post title={title} date={date} html={html} />
     </div>
   );
 }
 
-BlogPostTemplate.propTypes = {
+PostTemplate.propTypes = {
   data: PropTypes.shape({
     site: sitePropType,
     markdownRemark: markdownRemarkPropType,
@@ -30,7 +30,7 @@ BlogPostTemplate.propTypes = {
 };
 
 export const pageQuery = graphql`
-  query BlogPostByPath($path: String!) {
+  query PostByPath($path: String!) {
     site {
       siteMetadata {
         title

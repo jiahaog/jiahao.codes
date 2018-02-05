@@ -22,7 +22,7 @@ const PostTitle = styled.h3`
   margin-top: 1rem;
 `;
 
-export default function IndexContent({ posts }) {
+export default function IndexPage({ posts }) {
   return (
     <div>
       <Bio />
@@ -41,7 +41,7 @@ export default function IndexContent({ posts }) {
   );
 }
 
-IndexContent.propTypes = {
+IndexPage.propTypes = {
   posts: PropTypes.arrayOf(
     PropTypes.shape({
       date: PropTypes.string.isRequired,

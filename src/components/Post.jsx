@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Bio from '../components/Bio';
 
-export default function BlogPostContent({ title, date, html }) {
+export default function Post({ title, date, html }) {
   return (
     <div>
       <h1>{title}</h1>
@@ -15,7 +15,7 @@ export default function BlogPostContent({ title, date, html }) {
   );
 }
 
-BlogPostContent.propTypes = {
+Post.propTypes = {
   date: PropTypes.string.isRequired,
   html: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,

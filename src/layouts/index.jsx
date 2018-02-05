@@ -25,7 +25,7 @@ const ContentDiv = styled.div`
   max-width: 600px;
 `;
 
-export default function Template({ location, children }) {
+export default function Layout({ location, children }) {
   return (
     <ContentDiv>
       <HomeLink showLarge={location.pathname === '/'} />
@@ -34,7 +34,7 @@ export default function Template({ location, children }) {
   );
 }
 
-Template.propTypes = {
+Layout.propTypes = {
   children: PropTypes.func.isRequired,
   location: PropTypes.shape({
     pathname: PropTypes.string.isRequired,

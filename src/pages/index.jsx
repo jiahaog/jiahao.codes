@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import IndexContent from '../components/IndexPage';
+import IndexPage from '../components/IndexPage';
 import {
   allMarkdownRemark as allMarkdownRemarkPropType,
   site as sitePropType,
@@ -17,7 +17,7 @@ export default function BlogIndex({
   return (
     <div>
       <Helmet title={siteTitle} />
-      <IndexContent
+      <IndexPage
         posts={posts.map(
           ({
             node: {
