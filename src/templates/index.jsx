@@ -6,7 +6,7 @@ import {
   markdownRemark as markdownRemarkPropType,
   site as sitePropType,
 } from '../proptypes';
-import Post from '../components/Post';
+import { Post } from '../components';
 
 export default function PostTemplate({
   data: {
