@@ -6,9 +6,12 @@ exports.createPages = ({ graphql, boundActionCreators: { createPage } }) =>
     resolve(
       graphql(`
         {
-          allMarkdownRemark(limit: 1000) {
+          allMarkdownRemark(
+            filter: { fileAbsolutePath: { regex: "/src/pages/blog//" } }
+          ) {
             edges {
               node {
+                fileAbsolutePath
                 frontmatter {
                   path
                 }
@@ -22,15 +25,17 @@ exports.createPages = ({ graphql, boundActionCreators: { createPage } }) =>
           reject(result.errors);
         }
 
-        result.data.allMarkdownRemark.edges.forEach((edge) => {
-          createPage({
-            path: edge.node.frontmatter.path,
-            component: blogPost,
-            context: {
-              path: edge.node.frontmatter.path,
-            },
-          });
-        });
+        result.data.allMarkdownRemark.edges.forEach(
+          ({ node: { fileAbsolutePath, frontmatter: { path } } }) => {
+            createPage({
+              path,
+              component: blogPost,
+              context: {
+                path,
+              },
+            });
+          },
+        );
       }),
     );
   });
