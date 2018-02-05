@@ -6,7 +6,7 @@ import {
   markdownRemark as markdownRemarkPropType,
   site as sitePropType,
 } from '../proptypes';
-import BlogPost from './BlogPost';
+import BlogPost from '../components/BlogPost';
 
 export default function BlogPostTemplate({
   data: {

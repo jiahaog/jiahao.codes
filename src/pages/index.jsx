@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import IndexContent from './IndexContent';
+import IndexContent from '../components/IndexPage';
 import {
   allMarkdownRemark as allMarkdownRemarkPropType,
   site as sitePropType,
