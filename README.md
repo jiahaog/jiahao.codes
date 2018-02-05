@@ -4,7 +4,7 @@ Personal *Hype-driven* Web Page
 
 ## Installation
 
-With [Node.js](https://nodejs.org/) installed,
+With [Node.js](https://nodejs.org/) > v8 installed,
 
 ```bash
 make install
