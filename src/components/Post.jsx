@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Bio from '../components/Bio';
+import Bio from './Bio';
 
 export default function Post({ title, date, html }) {
   return (

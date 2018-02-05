@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-import Bio from '../components/Bio';
+import Bio from './Bio';
 
 const PostLink = styled(Link)`
   display: inline-block;
