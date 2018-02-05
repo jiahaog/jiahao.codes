@@ -2,12 +2,6 @@ import PropTypes from 'prop-types';
 
 const { shape: ptShape, string: ptString, arrayOf: ptArrayOf } = PropTypes;
 
-export const site = ptShape({
-  siteMetadata: ptShape({
-    title: PropTypes.string.isRequired,
-  }).isRequired,
-}).isRequired;
-
 export const markdownRemark = ptShape({
   frontmatter: ptShape({
     excerpt: ptString,

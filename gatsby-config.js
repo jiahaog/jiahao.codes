@@ -1,8 +1,4 @@
 module.exports = {
-  siteMetadata: {
-    title: 'Jia Hao',
-    author: 'Jia Hao Goh',
-  },
   plugins: [
     'gatsby-plugin-react-next',
     'gatsby-plugin-styled-components',
