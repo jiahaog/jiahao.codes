@@ -11,6 +11,7 @@
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-google-analytics": "^1.0.15",
     "gatsby-plugin-manifest": "^1.0.4",
+    "gatsby-plugin-nprogress": "^1.0.11",
     "gatsby-plugin-offline": "^1.0.12",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-react-next": "^1.0.8",
@@ -39,6 +40,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.6.1",
     "prettier": "^1.10.2",
+    "serve": "^6.4.9",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
     "stylelint-config-styled-components": "^0.1.1",
@@ -63,6 +65,7 @@
     "lint:fix": "eslint --ext .js --ext .jsx --ignore-pattern public --fix . && stylelint --fix src/**/*.{css,js,jsx}",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write 'src/**/*.js'",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "serve": "serve public"
   }
 }

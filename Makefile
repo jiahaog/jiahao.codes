@@ -17,6 +17,10 @@ install:
 build:
 	npm run build
 
+.PHONY: serve
+serve: build
+	npm run serve
+
 .PHONY: lint
 lint:
 	npm run lint

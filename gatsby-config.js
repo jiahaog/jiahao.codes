@@ -7,6 +7,12 @@ module.exports = {
     'gatsby-plugin-react-next',
     'gatsby-plugin-styled-components',
     {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        showSpinner: false,
+      },
+    },
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography.js`,
