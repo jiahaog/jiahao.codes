@@ -25,7 +25,6 @@ const PostTitle = styled.h3`
 const PostDate = styled.small`
   display: block;
   margin-bottom: 0.5rem;
-  opacity: 0.8;
 `;
 
 export default function IndexPage({ posts }) {

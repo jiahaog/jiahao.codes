@@ -3,6 +3,11 @@ a {
   color: #5c6bc0;
 }
 
+a > p,
+a > small {
+  color: hsla(0, 0%, 0%, 0.8);
+}
+
 h1 > a,
 h3 > a {
   background-image: none;
