@@ -65,16 +65,18 @@ HeadComponent.propTypes = {
 };
 
 export default function Head({ image, path, excerpt, title }) {
-  const props = {
-    description: excerpt,
-    image: siteUrl + image,
-    url: siteUrl + path,
-    title,
-    isPost: !!path,
-    structuredData: buildStructuredData(),
-  };
-
-  return <HeadComponent {...props} />;
+  return (
+    <HeadComponent
+      {...{
+        description: excerpt,
+        image: siteUrl + image,
+        url: siteUrl + path,
+        title,
+        isPost: !!path,
+        structuredData: buildStructuredData(),
+      }}
+    />
+  );
 }
 
 Head.propTypes = {
