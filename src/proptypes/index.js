@@ -9,7 +9,6 @@ export const site = ptShape({
 }).isRequired;
 
 export const markdownRemark = ptShape({
-  path: ptString,
   frontmatter: ptShape({
     excerpt: ptString,
     title: ptString.isRequired,
