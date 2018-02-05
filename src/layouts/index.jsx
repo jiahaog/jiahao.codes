@@ -1,24 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
 import styled from 'styled-components';
+
+import HomeLink from '../components/HomeLink';
 
 require('prismjs/themes/prism.css');
 require('../styles/globals.css');
-
-function HomeLink({ showLarge }) {
-  const Heading = `h${showLarge ? '1' : '3'}`;
-
-  return (
-    <Heading>
-      <Link to="/">&lt;Jia Hao /&gt;</Link>
-    </Heading>
-  );
-}
-
-HomeLink.propTypes = {
-  showLarge: PropTypes.bool.isRequired,
-};
 
 const ContentDiv = styled.div`
   margin: 3rem auto;
@@ -28,7 +15,7 @@ const ContentDiv = styled.div`
 export default function Layout({ location, children }) {
   return (
     <ContentDiv>
-      <HomeLink showLarge={location.pathname === '/'} />
+      <HomeLink isLarge={location.pathname === '/'} />
       {children()}
     </ContentDiv>
   );
