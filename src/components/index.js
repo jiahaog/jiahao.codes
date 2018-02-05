@@ -1,3 +1,3 @@
-export HomeLink from './HomeLink';
-export IndexPage from './IndexPage';
-export Post from './Post';
+export { default as HomeLink } from './HomeLink';
+export { default as IndexPage } from './IndexPage';
+export { default as Post } from './Post';
