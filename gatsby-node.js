@@ -45,6 +45,6 @@ const createPages = (
   });
 
 exports.createPages = async (props) => {
-  await createPages(props, '/src/pages/blog/', './src/templates/index.jsx');
+  await createPages(props, '/src/pages/blog/', './src/templates/Post.jsx');
   await createPages(props, '/src/pages/about/', './src/templates/About.jsx');
 };
