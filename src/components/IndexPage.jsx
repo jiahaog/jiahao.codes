@@ -16,6 +16,11 @@ const PostLink = styled(Link)`
   &:hover {
     background-color: #f8f8f7;
   }
+
+  @media (max-width: 600px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 `;
 
 const PostTitle = styled.h3`
