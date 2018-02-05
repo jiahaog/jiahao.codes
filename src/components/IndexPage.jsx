@@ -36,6 +36,7 @@ export default function IndexPage({ posts }) {
   return (
     <div>
       <Bio />
+      <Link to="/about">About</Link>
       <div>
         {posts.map(({ title, path, date, excerpt }) => (
           <PostLink key={path} to={path}>

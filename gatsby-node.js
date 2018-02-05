@@ -1,13 +1,17 @@
 const path = require('path');
 
-exports.createPages = ({ graphql, boundActionCreators: { createPage } }) =>
+const createPages = (
+  { graphql, boundActionCreators: { createPage } },
+  filter,
+  componentPath,
+) =>
   new Promise((resolve, reject) => {
-    const blogPost = path.resolve('./src/templates/index.jsx');
+    const template = path.resolve(componentPath);
     resolve(
       graphql(`
         {
           allMarkdownRemark(
-            filter: { fileAbsolutePath: { regex: "/src/pages/blog//" } }
+            filter: { fileAbsolutePath: { regex: "${filter}" } }
           ) {
             edges {
               node {
@@ -26,12 +30,12 @@ exports.createPages = ({ graphql, boundActionCreators: { createPage } }) =>
         }
 
         result.data.allMarkdownRemark.edges.forEach(
-          ({ node: { fileAbsolutePath, frontmatter: { path } } }) => {
+          ({ node: { frontmatter: { path: pagePath } } }) => {
             createPage({
-              path,
-              component: blogPost,
+              path: pagePath,
+              component: template,
               context: {
-                path,
+                path: pagePath,
               },
             });
           },
@@ -39,3 +43,8 @@ exports.createPages = ({ graphql, boundActionCreators: { createPage } }) =>
       }),
     );
   });
+
+exports.createPages = async (props) => {
+  await createPages(props, '/src/pages/blog/', './src/templates/index.jsx');
+  await createPages(props, '/src/pages/about/', './src/templates/About.jsx');
+};
