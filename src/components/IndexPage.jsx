@@ -22,6 +22,12 @@ const PostTitle = styled.h3`
   margin-top: 1rem;
 `;
 
+const PostDate = styled.small`
+  display: block;
+  margin-bottom: 0.5rem;
+  opacity: 0.8;
+`;
+
 export default function IndexPage({ posts }) {
   return (
     <div>
@@ -30,9 +36,7 @@ export default function IndexPage({ posts }) {
         {posts.map(({ title, path, date, excerpt }) => (
           <PostLink key={path} to={path}>
             <PostTitle>{title}</PostTitle>
-            <code>
-              <small>{date}</small>
-            </code>
+            <PostDate>{date}</PostDate>
             <p dangerouslySetInnerHTML={{ __html: excerpt }} />
           </PostLink>
         ))}
