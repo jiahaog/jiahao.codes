@@ -1,4 +1,9 @@
 module.exports = {
+  siteMetadata: {
+    title: `GatsbyJS`,
+    description: `A fantastic new static site generator.`,
+    siteUrl: `https://www.gatsbyjs.org`,
+  },
   plugins: [
     'gatsby-plugin-react-next',
     'gatsby-plugin-styled-components',
@@ -45,6 +50,7 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
+    'gatsby-plugin-feed',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
