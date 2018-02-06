@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-import Bio from './Bio';
-
 const PostLink = styled(Link)`
   display: inline-block;
   width: 100%;
@@ -40,7 +38,6 @@ const PostDate = styled.small`
 export default function IndexPage({ posts }) {
   return (
     <div>
-      <Bio />
       <div>
         {posts.map(({ title, path, date, excerpt }) => (
           <PostLink key={path} to={path}>

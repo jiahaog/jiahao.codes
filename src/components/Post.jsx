@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
-import Bio from './Bio';
+import Link from 'gatsby-link';
 
 export default function Post({ title, date, html }) {
   return (
@@ -12,7 +11,13 @@ export default function Post({ title, date, html }) {
       </p>
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <hr />
-      <Bio />
+      <p>
+        I'm Jia Hao, and I write software in Singapore. Find out more{' '}
+        <Link to="/about">about me</Link>, or follow me on{' '}
+        <a href="https://twitter.com/jiahaog" target="_blank" rel="noopener">
+          Twitter
+        </a>!
+      </p>
     </div>
   );
 }
