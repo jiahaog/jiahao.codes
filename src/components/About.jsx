@@ -6,6 +6,10 @@ import styled from 'styled-components';
 
 import { siteSocial } from '../proptypes';
 
+const SocialLinks = styled.div`
+  text-align: right;
+`;
+
 const SocialLink = styled.a`
   display: inline-block;
   background-image: none;
@@ -16,10 +20,17 @@ const SocialLink = styled.a`
 `;
 
 const Icon = styled.svg`
-  width: 50px;
+  width: 25px;
+  margin: 5px;
+  opacity: 0.8;
 
   &:hover {
     opacity: 0.5;
+  }
+
+  @media (max-width: 600px) {
+    opacity: 0.6;
+    width: 45px;
   }
 `;
 
@@ -56,7 +67,7 @@ export default function About({
     <div>
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
-      <div>
+      <SocialLinks>
         <SocialLink href={githubUrl}>
           <GithubIcon />
         </SocialLink>
@@ -66,7 +77,7 @@ export default function About({
         <SocialLink href={twitterUrl}>
           <TwitterIcon />
         </SocialLink>
-      </div>
+      </SocialLinks>
     </div>
   );
 }
