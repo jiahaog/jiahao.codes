@@ -3,14 +3,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
+import Img from 'gatsby-image';
 
-export default function Post({ title, date, html }) {
+export default function Post({ title, date, html, coverImageSizes }) {
   return (
     <div>
       <h1>{title}</h1>
       <p>
         <small>{date}</small>
       </p>
+      {coverImageSizes && <Img alt={title} sizes={coverImageSizes} />}
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <hr />
       <p>
@@ -28,4 +30,10 @@ Post.propTypes = {
   date: PropTypes.string.isRequired,
   html: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  // eslint-disable-next-line react/forbid-prop-types
+  coverImageSizes: PropTypes.object,
+};
+
+Post.defaultProps = {
+  coverImageSizes: null,
 };

@@ -1,6 +1,11 @@
 import PropTypes from 'prop-types';
 
-const { shape: ptShape, string: ptString, arrayOf: ptArrayOf } = PropTypes;
+const {
+  shape: ptShape,
+  string: ptString,
+  object: ptObject,
+  arrayOf: ptArrayOf,
+} = PropTypes;
 
 export const site = ptShape({
   siteMetadata: ptShape({
@@ -19,6 +24,8 @@ export const markdownRemark = ptShape({
     title: ptString.isRequired,
     date: ptString.isRequired,
     path: ptString.isRequired,
+    // eslint-disable-next-line react/forbid-prop-types
+    cover: ptObject,
   }).isRequired,
 }).isRequired;
 

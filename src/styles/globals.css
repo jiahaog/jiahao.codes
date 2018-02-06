@@ -36,3 +36,8 @@ pre {
 pre[class*='language-'] {
   margin-bottom: 1.45rem;
 }
+
+/* Because of the responsive image loading, the images are not in a block */
+.gatsby-image-outer-wrapper {
+  margin-bottom: 1.45rem;
+}

@@ -12,11 +12,12 @@ export default function PostTemplate({
     site,
     markdownRemark: {
       excerpt,
-      frontmatter: { title, date, excerpt: frontmatterExcerpt, path },
+      frontmatter: { title, date, excerpt: frontmatterExcerpt, path, cover },
       html,
     },
   },
 }) {
+  const imageSizes = cover && cover.childImageSharp.sizes;
   return (
     <div>
       <Head
@@ -25,7 +26,12 @@ export default function PostTemplate({
         path={path}
         site={site}
       />
-      <Post title={title} date={date} html={html} />
+      <Post
+        title={title}
+        date={date}
+        html={html}
+        coverImageSizes={imageSizes}
+      />
     </div>
   );
 }
@@ -58,6 +64,13 @@ export const pageQuery = graphql`
         title
         excerpt
         date(formatString: "MMMM DD, YYYY")
+        cover {
+          childImageSharp {
+            sizes(maxWidth: 1240) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
       }
     }
   }
