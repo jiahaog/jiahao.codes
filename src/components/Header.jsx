@@ -2,16 +2,18 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
-export default function HomeLink({ isLarge }) {
+export default function Header({ isLarge }) {
   const Heading = `h${isLarge ? '1' : '3'}`;
 
   return (
-    <Heading>
-      <Link to="/">&lt;Jia Hao /&gt;</Link>
-    </Heading>
+    <header>
+      <Heading>
+        <Link to="/">&lt;Jia Hao /&gt;</Link>
+      </Heading>
+    </header>
   );
 }
 
-HomeLink.propTypes = {
+Header.propTypes = {
   isLarge: PropTypes.bool.isRequired,
 };

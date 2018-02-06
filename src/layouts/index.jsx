@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { HomeLink } from '../components';
+import { Header } from '../components';
 
 require('prismjs/themes/prism.css');
 require('../styles/globals.css');
@@ -19,10 +19,10 @@ const ContentDiv = styled.div`
 
 export default function Layout({ location, children }) {
   return (
-    <ContentDiv>
-      <HomeLink isLarge={location.pathname === '/'} />
-      {children()}
-    </ContentDiv>
+    <div>
+      <Header isLarge={location.pathname === '/'} />
+      <ContentDiv>{children()}</ContentDiv>
+    </div>
   );
 }
 
