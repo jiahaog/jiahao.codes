@@ -23,4 +23,5 @@ serve: build
 
 .PHONY: lint
 lint:
-	npm run lint
+	npm run lint:js
+	npm run lint:css

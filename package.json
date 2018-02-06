@@ -61,8 +61,9 @@
   },
   "scripts": {
     "start": "gatsby develop",
-    "lint": "eslint --ext .js --ext .jsx --ignore-pattern public . && stylelint src/**/*.{css,js,jsx}",
-    "lint:fix": "eslint --ext .js --ext .jsx --ignore-pattern public --fix . && stylelint src/**/*.{css,js,jsx}",
+    "lint:js": "eslint --ext .js --ext .jsx --ignore-pattern public .",
+    "lint:js:fix": "eslint --ext .js --ext .jsx --ignore-pattern public --fix .",
+    "lint:css": "stylelint src/**/*.{css,js,jsx}",
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write 'src/**/*.js'",
     "build": "gatsby build",
