@@ -37,6 +37,21 @@ const PostDate = styled.small`
   margin-bottom: 0.5rem;
 `;
 
+const PostExcerpt = styled.p`
+  @media (max-width: 600px) {
+    margin-bottom: 0;
+  }
+`;
+
+const MobileAnchor = styled.p`
+  text-align: right;
+  text-transform: uppercase;
+
+  @media (min-width: 600px) {
+    display: none;
+  }
+`;
+
 export default function IndexPage({ posts }) {
   return (
     <div>
@@ -46,8 +61,12 @@ export default function IndexPage({ posts }) {
             <PostTitle>{title}</PostTitle>
             <PostContent>
               <PostDate>{date}</PostDate>
-              <p dangerouslySetInnerHTML={{ __html: excerpt }} />
+              <PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
             </PostContent>
+
+            <MobileAnchor>
+              <small>Read More</small>
+            </MobileAnchor>
           </PostLink>
         ))}
       </div>
