@@ -25,9 +25,8 @@ const createPages = (
         }
       `).then((result) => {
         if (result.errors) {
-          // eslint-disable-next-line no-console
-          console.error(result.errors);
           reject(result.errors);
+          return;
         }
 
         result.data.allMarkdownRemark.edges.forEach(
