@@ -13,7 +13,7 @@ export default function Post({ title, date, html, coverImageSizes }) {
         <small>{date}</small>
       </p>
       {coverImageSizes && (
-        <Img alt={title} sizes={coverImageSizes} backgroundColor={true} />
+        <Img alt={title} sizes={coverImageSizes} backgroundColor />
       )}
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <hr />
