@@ -7,7 +7,7 @@ import Img from 'gatsby-image';
 import styled from 'styled-components';
 
 const Title = styled.h1`
-  @media (min-width: 600px) {
+  @media (min-width: 740px) {
     font-size: 3.3rem;
   }
 `;

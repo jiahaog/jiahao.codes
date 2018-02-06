@@ -11,7 +11,7 @@ const LayoutDiv = styled.div`
 
 const ContentDiv = styled.div`
   margin: 3rem auto;
-  max-width: 600px;
+  max-width: 740px;
 `;
 
 export default function Layout({ path, children }) {
