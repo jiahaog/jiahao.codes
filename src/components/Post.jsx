@@ -6,20 +6,26 @@ import Link from 'gatsby-link';
 import Img from 'gatsby-image';
 import styled from 'styled-components';
 
+const Title = styled.h1`
+  @media (min-width: 600px) {
+    font-size: 3.3rem;
+  }
+`;
+
 const Date = styled.p`
   text-align: right;
 `;
 
 const Excerpt = styled.p`
   opacity: 0.7;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 0;
 `;
 
 export default function Post({ title, date, excerpt, html, coverImageSizes }) {
   return (
     <div>
-      <h1>{title}</h1>
+      <Title>{title}</Title>
       <Excerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
       <Date>
         <small>{date}</small>
