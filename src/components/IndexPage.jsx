@@ -15,12 +15,17 @@ const PostLink = styled(Link)`
 
   &:hover {
     background-color: #f8f8f7;
+    background-image: none;
   }
 
   @media (max-width: 600px) {
     padding-left: 0;
     padding-right: 0;
   }
+`;
+
+const PostContent = styled.div`
+  color: hsla(0, 0%, 0%, 0.8);
 `;
 
 const PostTitle = styled.h3`
@@ -40,8 +45,10 @@ export default function IndexPage({ posts }) {
         {posts.map(({ title, path, date, excerpt }) => (
           <PostLink key={path} to={path}>
             <PostTitle>{title}</PostTitle>
-            <PostDate>{date}</PostDate>
-            <p dangerouslySetInnerHTML={{ __html: excerpt }} />
+            <PostContent>
+              <PostDate>{date}</PostDate>
+              <p dangerouslySetInnerHTML={{ __html: excerpt }} />
+            </PostContent>
           </PostLink>
         ))}
       </div>
