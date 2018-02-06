@@ -12,9 +12,9 @@ export default function Post({ title, date, html }) {
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <hr />
       <p>
-        I'm Jia Hao, and I write software in Singapore. Find out more{' '}
+        I’m Jia Hao, and I write software in Singapore. Find out more{' '}
         <Link to="/about">about me</Link>, or follow me on{' '}
-        <a href="https://twitter.com/jiahaog" target="_blank" rel="noopener">
+        <a href="https://twitter.com/jiahaog" rel="noopener noreferrer">
           Twitter
         </a>!
       </p>
