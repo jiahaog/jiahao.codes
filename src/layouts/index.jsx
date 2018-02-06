@@ -7,22 +7,22 @@ import { Header } from '../components';
 require('prismjs/themes/prism.css');
 require('../styles/globals.css');
 
+const LayoutDiv = styled.div`
+  padding-left: 1rem;
+  padding-right: 1rem;
+`;
+
 const ContentDiv = styled.div`
   margin: 3rem auto;
   max-width: 600px;
-
-  @media (max-width: 600px) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
 `;
 
 export default function Layout({ location: { pathname }, children }) {
   return (
-    <div>
+    <LayoutDiv>
       <Header path={pathname} />
       <ContentDiv>{children()}</ContentDiv>
-    </div>
+    </LayoutDiv>
   );
 }
 

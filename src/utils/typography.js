@@ -5,7 +5,7 @@ theme.bodyFontFamily = ['Source Sans Pro', 'sans-serif'];
 theme.googleFonts = [
   {
     name: 'Work Sans',
-    styles: ['600'],
+    styles: ['500', '600'],
   },
   {
     name: 'Source Sans Pro',
