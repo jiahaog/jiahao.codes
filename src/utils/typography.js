@@ -9,7 +9,7 @@ theme.googleFonts = [
   },
   {
     name: 'Source Sans Pro',
-    styles: ['400', '400i', '600'],
+    styles: ['400', '400i'],
   },
 ];
 
