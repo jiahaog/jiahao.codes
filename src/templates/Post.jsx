@@ -2,10 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Head, Post } from '../components';
-import { markdownRemark as markdownRemarkPropType } from '../proptypes';
+import {
+  markdownRemark as markdownRemarkPropType,
+  site as sitePropType,
+} from '../proptypes';
 
 export default function PostTemplate({
   data: {
+    site,
     markdownRemark: {
       excerpt,
       frontmatter: { title, date, excerpt: frontmatterExcerpt, path },
@@ -15,7 +19,12 @@ export default function PostTemplate({
 }) {
   return (
     <div>
-      <Head title={title} excerpt={frontmatterExcerpt || excerpt} path={path} />
+      <Head
+        title={title}
+        excerpt={frontmatterExcerpt || excerpt}
+        path={path}
+        site={site}
+      />
       <Post title={title} date={date} html={html} />
     </div>
   );
@@ -24,11 +33,22 @@ export default function PostTemplate({
 PostTemplate.propTypes = {
   data: PropTypes.shape({
     markdownRemark: markdownRemarkPropType,
+    site: sitePropType.isRequired,
   }).isRequired,
 };
 
 export const pageQuery = graphql`
   query PostByPath($path: String!) {
+    site {
+      siteMetadata {
+        siteUrl
+        title
+        author
+        description
+        facebookAppId
+        twitterUser
+      }
+    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       id
       html

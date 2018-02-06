@@ -5,11 +5,11 @@ import { Head, IndexPage } from '../components';
 import { allMarkdownRemark as allMarkdownRemarkPropType } from '../proptypes';
 
 export default function BlogIndex({
-  data: { allMarkdownRemark: { edges: posts } },
+  data: { site, allMarkdownRemark: { edges: posts } },
 }) {
   return (
     <div>
-      <Head />
+      <Head site={site} />
       <IndexPage
         posts={posts.map(
           ({
@@ -37,6 +37,16 @@ BlogIndex.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
+    site {
+      siteMetadata {
+        siteUrl
+        title
+        author
+        description
+        facebookAppId
+        twitterUser
+      }
+    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fileAbsolutePath: { regex: "/src/pages/blog//" } }

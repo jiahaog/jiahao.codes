@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `GatsbyJS`,
-    description: `A fantastic new static site generator.`,
-    siteUrl: `https://www.gatsbyjs.org`,
+    siteUrl: 'https://jiahaog.com',
+    title: 'Jia Hao',
+    author: 'Jia Hao Goh',
+    description: 'Jia Hao blogs about code',
+    facebookAppId: '',
+    twitterUser: 'jiahaog',
   },
   plugins: [
     'gatsby-plugin-react-next',
@@ -15,9 +18,9 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: 'gatsby-plugin-typography',
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
+        pathToConfigModule: 'src/utils/typography.js',
       },
     },
     {
