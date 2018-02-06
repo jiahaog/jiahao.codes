@@ -45,6 +45,11 @@ export const pageQuery = graphql`
         description
         facebookAppId
         twitterUser
+        social {
+          githubUrl
+          twitterUrl
+          keybaseUrl
+        }
       }
     }
     allMarkdownRemark(

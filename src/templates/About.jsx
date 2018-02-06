@@ -13,7 +13,7 @@ export default function AboutTemplate({
   return (
     <div>
       <Head title={title} path={path} site={site} />
-      <About title={title} html={html} />
+      <About title={title} html={html} social={site.siteMetadata.social} />
     </div>
   );
 }
@@ -35,6 +35,11 @@ export const pageQuery = graphql`
         description
         facebookAppId
         twitterUser
+        social {
+          githubUrl
+          twitterUrl
+          keybaseUrl
+        }
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {

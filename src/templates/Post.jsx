@@ -54,6 +54,11 @@ export const pageQuery = graphql`
         description
         facebookAppId
         twitterUser
+        social {
+          githubUrl
+          twitterUrl
+          keybaseUrl
+        }
       }
     }
     markdownRemark(frontmatter: { path: { eq: $path } }) {

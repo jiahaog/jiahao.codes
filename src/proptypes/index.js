@@ -7,6 +7,12 @@ const {
   arrayOf: ptArrayOf,
 } = PropTypes;
 
+export const siteSocial = ptShape({
+  githubUrl: ptString.isRequired,
+  twitterUrl: ptString.isRequired,
+  keybaseUrl: ptString.isRequired,
+});
+
 export const site = ptShape({
   siteMetadata: ptShape({
     siteUrl: ptString.isRequired,
@@ -15,6 +21,7 @@ export const site = ptShape({
     description: ptString.isRequired,
     facebookAppId: ptString.isRequired,
     twitterUser: ptString.isRequired,
+    social: siteSocial.isRequired,
   }).isRequired,
 });
 

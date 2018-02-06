@@ -6,6 +6,11 @@ module.exports = {
     description: 'Jia Hao blogs about code',
     facebookAppId: '',
     twitterUser: 'jiahaog',
+    social: {
+      githubUrl: 'https://github.com/jiahaog',
+      twitterUrl: 'https://twitter.com/jiahaog',
+      keybaseUrl: 'https://keybase.io/jiahaog',
+    },
   },
   plugins: [
     'gatsby-plugin-react-next',
