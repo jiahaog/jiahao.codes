@@ -53,7 +53,6 @@ module.exports = {
       },
     },
     'gatsby-transformer-sharp',
-    'gatsby-plugin-feed',
     'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-google-analytics',
@@ -61,6 +60,14 @@ module.exports = {
         trackingId: 'UA-66102276-1',
       },
     },
+    {
+      resolve: 'gatsby-plugin-sentry',
+      options: {
+        dsn: 'https://95a2b760d7da4745871cfc24130d725e@sentry.io/283796',
+        version: '3.22.1',
+      },
+    },
+    'gatsby-plugin-feed',
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify',
   ],
