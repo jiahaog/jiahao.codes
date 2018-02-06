@@ -2,28 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { Header } from '../components';
+import { Layout } from '../components';
 
 require('prismjs/themes/prism.css');
 require('../styles/globals.css');
 
-const LayoutDiv = styled.div`
-  padding-left: 1rem;
-  padding-right: 1rem;
-`;
-
-const ContentDiv = styled.div`
-  margin: 3rem auto;
-  max-width: 600px;
-`;
-
-export default function Layout({ location: { pathname }, children }) {
-  return (
-    <LayoutDiv>
-      <Header path={pathname} />
-      <ContentDiv>{children()}</ContentDiv>
-    </LayoutDiv>
-  );
+export default function LayoutTemplate({ location: { pathname }, children }) {
+  return <Layout path={pathname} children={children} />;
 }
 
 Layout.propTypes = {
