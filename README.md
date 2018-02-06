@@ -1,5 +1,7 @@
 # [jiahaog.com](https://jiahaog.com)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/d38a9c1b83fd46ec56e7/maintainability)](https://codeclimate.com/github/jiahaog/jiahao.codes/maintainability)
+
 Personal *Hype-driven* Web Page
 
 ## Installation
