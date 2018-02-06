@@ -27,6 +27,7 @@ const SiteTitle = styled.h3`
   margin: 0;
 
   color: ${(props) => (props.active ? '#26418f' : '')};
+  cursor: ${(props) => (props.active ? 'default' : '')};
 
   &:hover {
     color: #26418f;
