@@ -6,7 +6,7 @@ cover: './cover.jpg'
 excerpt: Exploring how timeouts on database connections are critical to resilent Rails applications
 ---
 
-*This post initially appeared on [Grab's Engineering Blog](https://engineering.grab.com/deep-dive-into-database-timeouts-in-rails)*
+*This article was originally published on [Grab's Engineering Blog](https://engineering.grab.com/deep-dive-into-database-timeouts-in-rails)*
 
 A couple of weeks ago, we had a production outage for one of our internal Ruby on Rails application servers. One of the databases that the application connects to had a failover event. It was expected that the server should continue functioning for endpoints which do not depend on this database, but it was observed that our server slowed down to a crawl, and was unable to function properly even after the failover completed, until we manually restarted the servers.
 
