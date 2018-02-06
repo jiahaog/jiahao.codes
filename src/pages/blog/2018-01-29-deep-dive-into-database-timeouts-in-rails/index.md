@@ -351,5 +351,6 @@ These principles are not just limited to Rails or MySQL, and the experiments and
 
 Big thanks to [Joel Low](https://github.com/lowjoel) for helping out with this investigation and clarifying ambiguities in Rails and MySQL, and my manager Amit Saini for his helpful review of this post!
 
-Source code for the test rails application can be found [here](https://github.com/grab/blogs/tree/master/2017-01-29-deep-dive-into-database-timeouts-in-rails).
+Cover photo by [Artem Verbo](https://unsplash.com/photos/Vc8jfmzWoFE) on [Unsplash](https://unsplash.com/).
 
+Source code for the test rails application can be found [here](https://github.com/grab/blogs/tree/master/2017-01-29-deep-dive-into-database-timeouts-in-rails).
