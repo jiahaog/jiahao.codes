@@ -14,12 +14,16 @@ install:
 	npm install
 
 .PHONY: build
-build:
+build: test
 	npm run build
 
 .PHONY: serve
 serve: build
 	npm run serve
+
+.PHONY: test
+test: lint
+	npm test
 
 .PHONY: lint
 lint:

@@ -64,7 +64,7 @@
     "lint:js": "eslint --ext .js --ext .jsx --ignore-pattern public .",
     "lint:js:fix": "eslint --ext .js --ext .jsx --ignore-pattern public --fix .",
     "lint:css": "stylelint src/**/*.{css,js,jsx}",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"TODO: Write tests\"",
     "format": "prettier --write 'src/**/*.js'",
     "build": "gatsby build",
     "serve": "serve public"
