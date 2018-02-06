@@ -10,6 +10,7 @@ const HeaderStyled = styled.header`
 
 const NavLink = styled(Link)`
   background-image: none;
+
   &:hover {
     background-image: none;
   }
@@ -25,7 +26,6 @@ const SiteTitle = styled.h3`
   font-size: 1rem;
   font-weight: 400;
   margin: 0;
-
   color: ${(props) => (props.active ? '#26418f' : '')};
   cursor: ${(props) => (props.active ? 'default' : '')};
 
@@ -37,8 +37,8 @@ const SiteTitle = styled.h3`
 const SiteLink = SiteTitle.extend`
   opacity: 0.7;
 
-  // Always keep 5px + 2px of space for the block so that the bottom border does not
-  // shift when navigating
+  /* Always keep 5px + 2px of space for the block so that the bottom border does not
+  shift when navigating */
   padding-bottom: ${(props) => (props.active ? '5px' : '7px')};
   border-bottom: ${(props) => (props.active ? '2px solid #26418f' : '')};
 `;
