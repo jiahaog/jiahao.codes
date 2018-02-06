@@ -2,18 +2,27 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
-export default function Header({ isLarge }) {
-  const Heading = `h${isLarge ? '1' : '3'}`;
-
+export default function Header({ path }) {
   return (
     <header>
-      <Heading>
-        <Link to="/">&lt;Jia Hao /&gt;</Link>
-      </Heading>
+      <nav>
+        <ul>
+          <li>
+            <Link className={path === '/' ? 'active' : ''} to="/">
+              &lt;Jia Hao /&gt;
+            </Link>
+          </li>
+          <li>
+            <Link className={path === '/about' ? 'active' : ''} to="/about">
+              About
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }
 
 Header.propTypes = {
-  isLarge: PropTypes.bool.isRequired,
+  path: PropTypes.string.isRequired,
 };

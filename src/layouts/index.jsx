@@ -17,10 +17,10 @@ const ContentDiv = styled.div`
   }
 `;
 
-export default function Layout({ location, children }) {
+export default function Layout({ location: { pathname }, children }) {
   return (
     <div>
-      <Header isLarge={location.pathname === '/'} />
+      <Header path={pathname} />
       <ContentDiv>{children()}</ContentDiv>
     </div>
   );
