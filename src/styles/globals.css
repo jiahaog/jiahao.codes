@@ -9,11 +9,6 @@ a > small {
   color: hsla(0, 0%, 0%, 0.8);
 }
 
-h1 > a,
-h3 > a {
-  background-image: none;
-}
-
 a:hover {
   color: #26418f;
 }
