@@ -3,7 +3,7 @@ title: Deep Dive into Database Timeouts in Rails
 date: 2018-01-29
 path: "/blog/deep-dive-into-database-timeouts-in-rails"
 cover: './cover.jpg'
-excerpt: "Disaster strikes when you do not configure timeout values properly. In this post, we dive into the details of how timeouts work with Ruby on Rails and Databases."
+excerpt: Exploring how timeouts on database connections are critical to resilent Rails applications
 ---
 
 *This post initially appeared on [Grab's Engineering Blog](https://engineering.grab.com/deep-dive-into-database-timeouts-in-rails)*

@@ -30,6 +30,7 @@ export default function PostTemplate({
         title={title}
         date={date}
         html={html}
+        excerpt={frontmatterExcerpt}
         coverImageSizes={imageSizes}
       />
     </div>

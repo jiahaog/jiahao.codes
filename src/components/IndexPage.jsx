@@ -26,6 +26,7 @@ const PostLink = styled(Link)`
 
 const PostContent = styled.div`
   color: hsla(0, 0%, 0%, 0.8);
+  opacity: 0.8;
 `;
 
 const PostTitle = styled.h3`
