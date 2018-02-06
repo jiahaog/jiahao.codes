@@ -37,6 +37,12 @@ pre[class*='language-'] {
   margin-bottom: 1.45rem;
 }
 
+blockquote {
+  font-size: 0.9rem;
+  line-height: 1.3rem;
+  border-left: 1px solid #1ca086;
+}
+
 /* Because of the responsive image loading, the margin for the images do not apply */
 .gatsby-image-outer-wrapper {
   margin-bottom: 1.45rem;
