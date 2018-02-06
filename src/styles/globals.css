@@ -37,7 +37,7 @@ pre[class*='language-'] {
   margin-bottom: 1.45rem;
 }
 
-/* Because of the responsive image loading, the images are not in a block */
+/* Because of the responsive image loading, the margin for the images do not apply */
 .gatsby-image-outer-wrapper {
   margin-bottom: 1.45rem;
 }

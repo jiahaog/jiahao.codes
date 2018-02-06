@@ -66,8 +66,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         cover {
           childImageSharp {
-            sizes(maxWidth: 1240) {
-              ...GatsbyImageSharpSizes
+            sizes(maxWidth: 600) {
+              ...GatsbyImageSharpSizes_withWebp
             }
           }
         }
