@@ -23,8 +23,8 @@ const List = styled.ul`
 
 const SiteTitle = styled.h3`
   display: inline-block;
-  font-size: 1rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 500;
   margin: 0;
   color: ${(props) => (props.active ? '#26418f' : '')};
   cursor: ${(props) => (props.active ? 'default' : '')};
@@ -35,6 +35,7 @@ const SiteTitle = styled.h3`
 `;
 
 const SiteLink = SiteTitle.extend`
+  font-size: 1rem;
   opacity: 0.7;
 
   /* Always keep 5px + 2px of space for the block so that the bottom border does not
@@ -50,7 +51,9 @@ export default function Header({ path }) {
         <List>
           <li>
             <NavLink to="/">
-              <SiteTitle active={path === '/'}>&lt;Jia Hao /&gt;</SiteTitle>
+              <SiteTitle active={path === '/'}>
+                &lt;&thinsp;Jia&thinsp;Hao&thinsp;/&gt;
+              </SiteTitle>
             </NavLink>
           </li>
           <li>
