@@ -4,6 +4,82 @@ https://keybase.io/jiahaog
 
 I hereby claim:
 
+  * I am an admin of https://jiahao.codes
+  * I am jiahaog (https://keybase.io/jiahaog) on keybase.
+  * I have a public key with fingerprint 9D65 9C53 BC6C B85D 8AFC  27A1 AE97 2C64 E5E2 3726
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "012027cd19cbe45c5f687089fcce0ed47b184bfcb3cc1293a39b070eb051a54dedeb0a",
+      "fingerprint": "9d659c53bc6cb85d8afc27a1ae972c64e5e23726",
+      "host": "keybase.io",
+      "key_id": "ae972c64e5e23726",
+      "kid": "01017624da667a5d8a864594711dd9abc43642825fc8a7b916b473c250e20b559e540a",
+      "uid": "f23a4ca483896d3374aa4d85a2a7c719",
+      "username": "jiahaog"
+    },
+    "service": {
+      "hostname": "jiahao.codes",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1517969902,
+  "expire_in": 157680000,
+  "prev": "5f27700994adb1df40d08540850dc90c33213ee5f5576972f4c1614874e5bedb",
+  "seqno": 34,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.76
+Comment: https://keybase.io/crypto
+
+yMNsAnicbVJrTFRHGF1kIeGVLmgt9qHxslipPO5j7msDEmq1C5SCoRADtuvcuXPZ
+K7h33V2QR0klBZoC2qKIFVGaULFWxRrAkNSUZ4qPxFoKbXWNNbyK0tCWSFI0tr1L
+6o8mnT8z88055zvfyQyH+RuC/TqPxsrTE/wGv+sDR4sNeeVwvoKQNLmMsFQQhXh5
+w0UydntshapMWAiSokmaRzIlIgkDFrEKJ/CkICoIYRLLgJcoAUgKkhiEKFpkICNK
+JE9iiWQpyAIZy/oRErGEojoKsMvpUh0eXVaUOVZELCMhDkkCKwtQQTQPKYhFnkYc
+wCymGZ7mdKJdc/sYujkJunG8quk1/WJbtvc/+Ke+SYrnaCBDjuOhr4HAAVYEPEXJ
+sgglBBgO0ALNKkiAvCRSnAR4BtEsiWlSYlkRs2DZd/GynEIzECAIBEYQOZlheAAh
+kAUW0pBHPCX6gG7scsA9WEfvVqEdagVEZSyhF0tUhH25+gb5DyAeaXrSOtXp0jwa
+0or0F7vH43RbfExPmdMH3Ycl278iNkl1yHqMOqMEu9yq5iAslI5EHtWnSrEUL3Ki
+SNKxBC51qi5sU30IlucEUl++PrhEl2QVmudJUhQBlCVKVgApk4I+rsCSMhJJxDA0
+xWDMKqxO1fNVAKI4Cgi8HrOEZYnwjbXXoREWBug+YYGu6VYLHNBT7MJE5eDATqPB
+L9gQGLDC978MwUGmp7/O2GoyHPrqS3tbY8PvqWXb3v6++eJI9Ltxu96q3gF7Cjmz
+tm58Y/4tuu3uVrbpZPdMT/K+Z1ul/rVWc87CiQLRaHusrF8XPhU0cvrU0ifjoQ9v
+tD+zZUupJnSvfpiXQZedmNx8H498sON0lXDht9r8j2qsCd/mW1Jv9gbOmPZMbefp
+48n+pjcvjnd1hIa1G/uq0hMa36fjr/xQOdicmNLbsP5am7e/L7vveNalpf32ug0r
+DtzrCKj5OmO6+u96b9bI0KNwc1Z311kU13S40j+uxdy/cWHg16rvHFdua+JkWmq2
+J7AkqrZnjdeWpvxlvBkQMgfRjPud5urn0otvH+xajLwai6ybHiSdeslh+nhlorNz
+lrP/kTs8H9/WdC7ix8EFdvGNkIme+5mZidWNn9lba2PN1qG1o/Xln85afplLakmK
++yaJ96ZFHPqp/AB4bdWsUjmfWzz6PPD2R9QfO+KIfvVy+Dx0151b1ZV5aWVLyqOQ
+q+d3jiXcahx7ff+LUzcy50wXQIM2ERRzN/Lse38O9bJZiUtTFuvscFVNzJOftQ5q
+a4pg799dGiXWZY9tetJZuNhj2xbYvmvvmSJwJjHyhcaTU2vOu3ujp68fWZ2WeyfG
+BnKE7LDN28csofOP7wWbM4wvf2jKf/CKeDn3miEubMw0ejg/vSI5KmAiNOeY5v3C
+WnRnPONzz+RI3j9cS7cz
+=kWYM
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/jiahaog
+
+==================================================================
+
+==================================================================
+https://keybase.io/jiahaog
+--------------------------------------------------------------------
+
+I hereby claim:
+
   * I am an admin of https://jiahaog.com
   * I am jiahaog (https://keybase.io/jiahaog) on keybase.
   * I have a public key with fingerprint 9D65 9C53 BC6C B85D 8AFC  27A1 AE97 2C64 E5E2 3726
