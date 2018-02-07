@@ -7,20 +7,20 @@ import styled from 'styled-components';
 
 const PostLink = styled(Link)`
   display: inline-block;
-  width: 100%;
   background-image: none;
   border-bottom: 1px solid #eee;
   padding-left: 1rem;
   padding-right: 1rem;
 
+  /* Make the block slightly larger than the container but still aligned to elements outside.
+   * It's sufficient to add the offset on the left side, and the +2rem will take care of the right
+   * side */
+  margin-left: -1rem;
+  width: calc(100% + 2rem);
+
   &:hover {
     background-color: #f8f8f7;
     background-image: none;
-  }
-
-  @media only screen and (max-width: 740px) {
-    padding-left: 0;
-    padding-right: 0;
   }
 `;
 
