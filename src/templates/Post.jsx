@@ -65,6 +65,7 @@ export const pageQuery = graphql`
       id
       html
       excerpt
+      timeToRead
       frontmatter {
         path
         title

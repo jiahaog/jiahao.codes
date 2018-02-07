@@ -39,25 +39,20 @@ const PostDate = styled.small`
 `;
 
 const PostExcerpt = styled.p`
-  @media only screen and (max-width: 740px) {
-    margin-bottom: 0.5rem;
-  }
+  margin-bottom: 0.5rem;
 `;
 
-const MobileAnchor = styled.p`
+const TimeToRead = styled.p`
+  color: hsla(0, 0%, 0%, 0.8);
   text-align: right;
-  text-transform: uppercase;
-
-  @media only screen and (min-width: 740px) {
-    display: none;
-  }
+  opacity: 0.6;
 `;
 
 export default function IndexPage({ posts }) {
   return (
     <div>
       <div>
-        {posts.map(({ title, path, date, excerpt }) => (
+        {posts.map(({ title, path, date, excerpt, timeToRead }) => (
           <PostLink key={path} to={path}>
             <PostTitle>{title}</PostTitle>
             <PostContent>
@@ -65,9 +60,9 @@ export default function IndexPage({ posts }) {
               <PostExcerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
             </PostContent>
 
-            <MobileAnchor>
-              <small>Read More</small>
-            </MobileAnchor>
+            <TimeToRead>
+              <small>{`${timeToRead} min read`}</small>
+            </TimeToRead>
           </PostLink>
         ))}
       </div>
@@ -82,6 +77,7 @@ IndexPage.propTypes = {
       excerpt: PropTypes.string.isRequired,
       path: PropTypes.string.isRequired,
       title: PropTypes.string.isRequired,
+      timeToRead: PropTypes.number.isRequired,
     }),
   ).isRequired,
 };

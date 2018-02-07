@@ -15,12 +15,14 @@ export default function BlogIndex({
           ({
             node: {
               excerpt,
+              timeToRead,
               frontmatter: { excerpt: frontmatterExcerpt, title, path, date },
             },
           }) => ({
             title,
             path,
             date,
+            timeToRead,
             excerpt: frontmatterExcerpt || excerpt,
           }),
         )}
@@ -59,6 +61,7 @@ export const pageQuery = graphql`
       edges {
         node {
           excerpt
+          timeToRead
           frontmatter {
             path
             date(formatString: "DD MMM YYYY")

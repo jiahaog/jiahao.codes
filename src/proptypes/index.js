@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 const {
   shape: ptShape,
   string: ptString,
+  number: ptNumber,
   object: ptObject,
   arrayOf: ptArrayOf,
 } = PropTypes;
@@ -34,6 +35,8 @@ export const markdownRemark = ptShape({
     // eslint-disable-next-line react/forbid-prop-types
     cover: ptObject,
   }).isRequired,
+  excerpt: ptString.isRequired,
+  timeToRead: ptNumber.isRequired,
 }).isRequired;
 
 export const allMarkdownRemark = ptShape({
