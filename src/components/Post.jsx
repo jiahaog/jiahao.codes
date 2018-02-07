@@ -23,12 +23,21 @@ const Excerpt = styled.p`
 `;
 
 const Img = styled(GatsbyImage)`
-  --width: calc(100vw - 20rem);
-  left: calc((-1 * var(--width) + 740px) / 2);
-  width: var(--width);
+  max-height: 95vh;
+
+  @media (min-width: 740px) {
+    width: 80vw;
+
+    /* need both to ensure that image scales relative to its center */
+    left: 50%;
+    transform: translateX(-50%);
+
+    /* stops the scaling of the image when the image width is smaller than the layout min-width and
+     * before the media queries kick in */
+    min-width: 740px;
+  }
+
   @media (max-width: 740px) {
-    left: 0;
-    width: initial;
     margin-left: -1rem;
     margin-right: -1rem;
   }
