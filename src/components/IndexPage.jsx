@@ -40,7 +40,7 @@ const PostDate = styled.small`
 
 const PostExcerpt = styled.p`
   @media only screen and (max-width: 740px) {
-    margin-bottom: 0;
+    margin-bottom: 0.5rem;
   }
 `;
 
