@@ -3,7 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
-import Img from 'gatsby-image';
+import GatsbyImage from 'gatsby-image';
 import styled from 'styled-components';
 
 const Title = styled.h1`
@@ -22,9 +22,28 @@ const Excerpt = styled.p`
   margin-bottom: 0;
 `;
 
+const Img = styled(GatsbyImage)`
+  --width: calc(100vw - 20rem);
+  left: calc((-1 * var(--width) + 740px) / 2);
+  width: var(--width);
+  @media (max-width: 740px) {
+    left: 0;
+    width: initial;
+    margin-left: -1rem;
+    margin-right: -1rem;
+  }
+`;
+
+const TestDiv = styled.div`
+  float: left;
+  height: 500px;
+  background-color: blue;
+`;
+
 export default function Post({ title, date, excerpt, html, coverImageSizes }) {
   return (
     <div>
+      <TestDiv />
       <Title>{title}</Title>
       <Excerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
       <Date>
