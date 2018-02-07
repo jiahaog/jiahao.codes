@@ -73,6 +73,29 @@ module.exports = {
       },
     },
     'gatsby-plugin-feed',
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'Jia Hao',
+        short_name: 'Jia Hao',
+        start_url: '/',
+        background_color: '#ffffff',
+        theme_color: '#5C6BC0',
+        display: 'minimal-ui',
+        icons: [
+          {
+            src: '/favicons/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/favicons/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+        ],
+      },
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-netlify',
   ],
