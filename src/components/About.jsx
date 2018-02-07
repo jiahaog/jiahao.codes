@@ -28,7 +28,7 @@ const Icon = styled.svg`
     opacity: 0.5;
   }
 
-  @media (max-width: 740px) {
+  @media only screen and (max-width: 740px) {
     opacity: 0.6;
     width: 45px;
   }

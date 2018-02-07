@@ -7,7 +7,7 @@ import GatsbyImage from 'gatsby-image';
 import styled from 'styled-components';
 
 const Title = styled.h1`
-  @media (min-width: 740px) {
+  @media only screen and (min-width: 740px) {
     font-size: 3.3rem;
   }
 `;
@@ -25,7 +25,7 @@ const Excerpt = styled.p`
 const Img = styled(GatsbyImage)`
   max-height: 95vh;
 
-  @media (min-width: 740px) {
+  @media only screen and (min-width: 740px) {
     width: 80vw;
 
     /* need both to ensure that image scales relative to its center */
@@ -37,7 +37,7 @@ const Img = styled(GatsbyImage)`
     min-width: 740px;
   }
 
-  @media (max-width: 740px) {
+  @media only screen and (max-width: 740px) {
     margin-left: -1rem;
     margin-right: -1rem;
   }

@@ -18,7 +18,7 @@ const PostLink = styled(Link)`
     background-image: none;
   }
 
-  @media (max-width: 740px) {
+  @media only screen and (max-width: 740px) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -39,7 +39,7 @@ const PostDate = styled.small`
 `;
 
 const PostExcerpt = styled.p`
-  @media (max-width: 740px) {
+  @media only screen and (max-width: 740px) {
     margin-bottom: 0;
   }
 `;
@@ -48,7 +48,7 @@ const MobileAnchor = styled.p`
   text-align: right;
   text-transform: uppercase;
 
-  @media (min-width: 740px) {
+  @media only screen and (min-width: 740px) {
     display: none;
   }
 `;
