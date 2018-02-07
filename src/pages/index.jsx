@@ -2,10 +2,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import { Head, IndexPage } from '../components';
-import { allMarkdownRemark as allMarkdownRemarkPropType } from '../proptypes';
+import {
+  allMarkdownRemark as allMarkdownRemarkPropType,
+  image as imagePropType,
+} from '../proptypes';
 
 export default function BlogIndex({
-  data: { site, allMarkdownRemark: { edges: posts } },
+  data: { site, allMarkdownRemark: { edges: posts }, indexCover },
 }) {
   return (
     <div>
@@ -26,6 +29,7 @@ export default function BlogIndex({
             excerpt: frontmatterExcerpt || excerpt,
           }),
         )}
+        coverImage={indexCover}
       />
     </div>
   );
@@ -34,6 +38,7 @@ export default function BlogIndex({
 BlogIndex.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: allMarkdownRemarkPropType,
+    indexCover: imagePropType,
   }).isRequired,
 };
 
@@ -69,6 +74,11 @@ export const pageQuery = graphql`
             title
           }
         }
+      }
+    }
+    indexCover: imageSharp(id: { regex: "/indexCover/" }) {
+      sizes(maxWidth: 2560) {
+        ...GatsbyImageSharpSizes
       }
     }
   }

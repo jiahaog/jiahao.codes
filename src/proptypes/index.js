@@ -26,14 +26,16 @@ export const site = ptShape({
   }).isRequired,
 });
 
+// eslint-disable-next-line react/forbid-prop-types
+export const image = ptObject;
+
 export const markdownRemark = ptShape({
   frontmatter: ptShape({
     excerpt: ptString,
     title: ptString.isRequired,
     date: ptString.isRequired,
     path: ptString.isRequired,
-    // eslint-disable-next-line react/forbid-prop-types
-    cover: ptObject,
+    cover: image,
   }).isRequired,
   excerpt: ptString.isRequired,
   timeToRead: ptNumber.isRequired,
