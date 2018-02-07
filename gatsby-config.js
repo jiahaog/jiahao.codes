@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: 'https://jiahaog.com',
+    siteUrl: 'https://jiahao.codes',
     title: 'Jia Hao',
     author: 'Jia Hao Goh',
     description: 'Jia Hao blogs about code',

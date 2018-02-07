@@ -1,4 +1,4 @@
-# [jiahaog.com](https://jiahaog.com)
+# [jiahao.codes](https://jiahao.codes)
 
 [![Build Status](https://travis-ci.org/jiahaog/jiahao.codes.svg?branch=master)](https://travis-ci.org/jiahaog/jiahao.codes)
 [![Greenkeeper badge](https://badges.greenkeeper.io/jiahaog/jiahao.codes.svg)](https://greenkeeper.io/)

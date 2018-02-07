@@ -1,10 +1,11 @@
 {
-  "name": "jiahaog.com",
+  "name": "jiahao.codes",
   "description": "Personal Hype-driven Web Page",
   "version": "1.0.0",
   "author": "Jia Hao Goh",
+  "private": true,
   "bugs": {
-    "url": "https://github.com/jiahaog/jiahaog/issues"
+    "url": "https://github.com/jiahaog/jiahao.codes/issues"
   },
   "dependencies": {
     "gatsby": "^1.9.158",
@@ -51,7 +52,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.2.2"
   },
-  "homepage": "https://jiahaog.com",
+  "homepage": "https://jiahao.codes",
   "keywords": [
     "blog",
     "gatsby",
@@ -62,7 +63,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jiahaog/jiahaog.git"
+    "url": "git+https://github.com/jiahaog/jiahao.codes.git"
   },
   "scripts": {
     "start": "gatsby develop",
