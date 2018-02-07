@@ -1,8 +1,8 @@
 ---
 title: Deep Dive into Database Timeouts in Rails
 date: 2018-01-29
-path: "/blog/deep-dive-into-database-timeouts-in-rails"
-cover: './cover.jpg'
+path: /blog/deep-dive-into-database-timeouts-in-rails
+cover: ./cover.jpg
 excerpt: Exploring how timeouts on database connections are critical to resilent Rails applications
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Hello Blog World!
-date: "2018-01-22"
-path: "/blog/hello-world/"
+date: 2018-01-22
+path: /blog/hello-world/
 excerpt: <code>console.log('Hello Blog World!');</code>
 ---
 
