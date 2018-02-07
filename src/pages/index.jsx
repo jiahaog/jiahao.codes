@@ -29,7 +29,7 @@ export default function BlogIndex({
             excerpt: frontmatterExcerpt || excerpt,
           }),
         )}
-        coverImage={indexCover}
+        coverImageSizes={indexCover.sizes}
       />
     </div>
   );

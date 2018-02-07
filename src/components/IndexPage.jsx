@@ -5,7 +5,14 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
+import Image from './Image';
 import { image as imagePropType } from '../proptypes';
+
+const CoverImage = styled(Image)`
+  @media only screen and (min-width: 740px) {
+    width: 65vw;
+  }
+`;
 
 const PostLink = styled(Link)`
   display: inline-block;
@@ -50,9 +57,10 @@ const TimeToRead = styled.p`
   opacity: 0.6;
 `;
 
-export default function IndexPage({ posts }) {
+export default function IndexPage({ posts, coverImageSizes }) {
   return (
     <div>
+      <CoverImage alt="Index page cover" sizes={coverImageSizes} />
       <div>
         {posts.map(({ title, path, date, excerpt, timeToRead }) => (
           <PostLink key={path} to={path}>
@@ -82,5 +90,5 @@ IndexPage.propTypes = {
       timeToRead: PropTypes.number.isRequired,
     }),
   ).isRequired,
-  coverImage: imagePropType,
+  coverImageSizes: imagePropType.isRequired,
 };
