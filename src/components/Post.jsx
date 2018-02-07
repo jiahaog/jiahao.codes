@@ -3,8 +3,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
-import GatsbyImage from 'gatsby-image';
 import styled from 'styled-components';
+import Image from './Image';
 
 const Title = styled.h1`
   @media only screen and (min-width: 740px) {
@@ -22,43 +22,15 @@ const Excerpt = styled.p`
   margin-bottom: 0;
 `;
 
-const Img = styled(GatsbyImage)`
-  max-height: 95vh;
-
-  @media only screen and (min-width: 740px) {
-    width: 80vw;
-
-    /* need both to ensure that image scales relative to its center */
-    left: 50%;
-    transform: translateX(-50%);
-
-    /* stops the scaling of the image when the image width is smaller than the layout min-width and
-     * before the media queries kick in */
-    min-width: 740px;
-  }
-
-  @media only screen and (max-width: 740px) {
-    margin-left: -1rem;
-    margin-right: -1rem;
-  }
-`;
-
-const TestDiv = styled.div`
-  float: left;
-  height: 500px;
-  background-color: blue;
-`;
-
 export default function Post({ title, date, excerpt, html, coverImageSizes }) {
   return (
     <div>
-      <TestDiv />
       <Title>{title}</Title>
       <Excerpt dangerouslySetInnerHTML={{ __html: excerpt }} />
       <Date>
         <small>{date}</small>
       </Date>
-      {coverImageSizes && <Img alt={title} sizes={coverImageSizes} />}
+      {coverImageSizes && <Image alt={title} sizes={coverImageSizes} />}
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <hr />
       <p>
