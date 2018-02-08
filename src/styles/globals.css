@@ -22,6 +22,9 @@ a:hover {
     #26418f 2px,
     rgba(0, 0, 0, 0) 2px
   );
+  text-shadow: 0.03em 0 #fff, -0.03em 0 #fff, 0 0.03em #fff, 0 -0.03em #fff,
+    0.06em 0 #fff, -0.06em 0 #fff, 0.09em 0 #fff, -0.09em 0 #fff, 0.12em 0 #fff,
+    -0.12em 0 #fff, 0.15em 0 #fff, -0.15em 0 #fff;
 }
 
 a:visited {
