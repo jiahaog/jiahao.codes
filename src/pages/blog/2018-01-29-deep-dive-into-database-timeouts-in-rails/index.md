@@ -29,7 +29,7 @@ ActiveRecord uses connection adapters to make database calls. For MySQL, it uses
 #### `pool`
 
 - Native to the [ActiveRecord ConnectionPool](http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/ConnectionPool.html)
-- 5 [Source](http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/ConnectionPool.html#class-ActiveRecord::ConnectionAdapters::ConnectionPool-label-Options)
+- Default 5 - [Source](http://api.rubyonrails.org/classes/ActiveRecord/ConnectionAdapters/ConnectionPool.html#class-ActiveRecord::ConnectionAdapters::ConnectionPool-label-Options)
 
 This specifies the maximum number of connections to the database that ActiveRecord will maintain per server.
 
