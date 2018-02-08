@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { GitHub, Keybase, Twitter } from './svgs';
+import { GitHub, Keybase, LinkedIn, Twitter } from './svgs';
 import { siteSocial } from '../proptypes';
 
 const SocialLinks = styled.div`
@@ -23,7 +23,7 @@ const SocialLink = styled.a`
 export default function About({
   title,
   html,
-  social: { githubUrl, twitterUrl, keybaseUrl },
+  social: { githubUrl, keybaseUrl, linkedInUrl, twitterUrl },
 }) {
   return (
     <div>
@@ -38,6 +38,13 @@ export default function About({
         </SocialLink>
         <SocialLink href={twitterUrl} target="_blank" rel="noopener noreferrer">
           <Twitter />
+        </SocialLink>
+        <SocialLink
+          href={linkedInUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedIn />
         </SocialLink>
       </SocialLinks>
     </div>

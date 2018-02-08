@@ -8,8 +8,9 @@ module.exports = {
     twitterUser: 'jiahaog',
     social: {
       githubUrl: 'https://github.com/jiahaog',
-      twitterUrl: 'https://twitter.com/jiahaog',
+      linkedInUrl: 'https://www.linkedin.com/in/jiahaog/',
       keybaseUrl: 'https://keybase.io/jiahaog',
+      twitterUrl: 'https://twitter.com/jiahaog',
     },
   },
   plugins: [

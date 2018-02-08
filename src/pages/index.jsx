@@ -54,8 +54,9 @@ export const pageQuery = graphql`
         twitterUser
         social {
           githubUrl
-          twitterUrl
           keybaseUrl
+          linkedInUrl
+          twitterUrl
         }
       }
     }

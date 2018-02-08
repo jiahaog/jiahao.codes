@@ -10,8 +10,9 @@ const {
 
 export const siteSocial = ptShape({
   githubUrl: ptString.isRequired,
-  twitterUrl: ptString.isRequired,
   keybaseUrl: ptString.isRequired,
+  linkedInUrl: ptString.isRequired,
+  twitterUrl: ptString.isRequired,
 });
 
 export const site = ptShape({
