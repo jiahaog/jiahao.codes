@@ -16,6 +16,7 @@ const Title = styled.h1`
 
 const Date = styled.p`
   text-align: right;
+  opacity: 0.7;
 `;
 
 const Excerpt = styled.p`
