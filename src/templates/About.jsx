@@ -27,33 +27,10 @@ AboutTemplate.propTypes = {
 
 export const pageQuery = graphql`
   query AboutPage($path: String!) {
-    site {
-      siteMetadata {
-        siteUrl
-        title
-        author
-        description
-        facebookAppId
-        twitterUser
-        social {
-          githubUrl
-          keybaseUrl
-          linkedInUrl
-          twitterUrl
-        }
-      }
-    }
+    ...SiteFragment
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      id
-      html
-      excerpt
-      timeToRead
-      frontmatter {
-        path
-        title
-        excerpt
-        date(formatString: "MMMM DD, YYYY")
-      }
+      ...MarkdownMetadataFragment
+      ...MarkdownFrontmatterFragment
     }
   }
 `;

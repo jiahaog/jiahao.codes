@@ -46,40 +46,10 @@ PostTemplate.propTypes = {
 
 export const pageQuery = graphql`
   query PostByPath($path: String!) {
-    site {
-      siteMetadata {
-        siteUrl
-        title
-        author
-        description
-        facebookAppId
-        twitterUser
-        social {
-          githubUrl
-          keybaseUrl
-          linkedInUrl
-          twitterUrl
-        }
-      }
-    }
+    ...SiteFragment
     markdownRemark(frontmatter: { path: { eq: $path } }) {
-      id
-      html
-      excerpt
-      timeToRead
-      frontmatter {
-        path
-        title
-        excerpt
-        date(formatString: "MMMM DD, YYYY")
-        cover {
-          childImageSharp {
-            sizes(maxWidth: 2560) {
-              ...GatsbyImageSharpSizes
-            }
-          }
-        }
-      }
+      ...MarkdownMetadataFragment
+      ...MarkdownFrontmatterWithCoverFragment
     }
   }
 `;

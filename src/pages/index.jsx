@@ -44,36 +44,15 @@ BlogIndex.propTypes = {
 
 export const pageQuery = graphql`
   query IndexQuery {
-    site {
-      siteMetadata {
-        siteUrl
-        title
-        author
-        description
-        facebookAppId
-        twitterUser
-        social {
-          githubUrl
-          keybaseUrl
-          linkedInUrl
-          twitterUrl
-        }
-      }
-    }
+    ...SiteFragment
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { fileAbsolutePath: { regex: "/src/pages/blog//" } }
     ) {
       edges {
         node {
-          excerpt
-          timeToRead
-          frontmatter {
-            path
-            date(formatString: "DD MMM YYYY")
-            excerpt
-            title
-          }
+          ...MarkdownMetadataFragment
+          ...MarkdownFrontmatterFragment
         }
       }
     }
