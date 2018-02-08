@@ -4,7 +4,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+
 import Image from './Image';
+import { image as imagePropType } from '../proptypes';
 
 const Title = styled.h1`
   @media only screen and (min-width: 740px) {
@@ -34,8 +36,8 @@ export default function Post({ title, date, excerpt, html, coverImageSizes }) {
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <hr />
       <p>
-        I’m Jia Hao, and I write software in Singapore. Find out more{' '}
-        <Link to="/about">about me</Link>, or follow me on{' '}
+        <Link to="/about">I’m</Link> Jia Hao, and I write software in Singapore.
+        Follow me on{' '}
         <a href="https://twitter.com/jiahaog" rel="noopener noreferrer">
           Twitter
         </a>!
@@ -49,8 +51,7 @@ Post.propTypes = {
   html: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
-  // eslint-disable-next-line react/forbid-prop-types
-  coverImageSizes: PropTypes.object,
+  coverImageSizes: imagePropType,
 };
 
 Post.defaultProps = {
