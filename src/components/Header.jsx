@@ -21,7 +21,16 @@ const ExternalNavLink = NavLink.withComponent('a');
 const List = styled.ul`
   display: flex;
   list-style: none;
-  margin: 0;
+  margin-bottom: 0;
+
+  /* So that it doesn't appear inlined with the bottom border */
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+
+  @media only screen and (max-width: 575.98px) {
+    display: block;
+    margin: 0;
+  }
 `;
 
 const ListItem = styled.li`
