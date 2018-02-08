@@ -4,7 +4,7 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 
 const HeaderStyled = styled.header`
-  margin-top: 10px;
+  margin-top: 1.2rem;
   border-bottom: 1px solid #d6d6d6;
 `;
 
@@ -23,9 +23,13 @@ const List = styled.ul`
   margin: 0;
 `;
 
+const ListItem = styled.li`
+  text-align: center;
+`;
+
 const SiteTitle = styled.h3`
   display: inline-block;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 500;
   margin: 0;
   color: ${(props) => (props.active ? '#26418f' : '')};
@@ -51,19 +55,19 @@ export default function Header({ path }) {
     <HeaderStyled>
       <nav>
         <List>
-          <li>
+          <ListItem>
             <NavLink to="/">
               <SiteTitle active={path === '/'}>
-                &lt;&thinsp;Jia&thinsp;Hao&thinsp;/&gt;
+                &nbsp;&lt;&thinsp;Jia&thinsp;Hao&thinsp;/&gt;
               </SiteTitle>
             </NavLink>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <NavLink to="/about">
               <SiteLink active={path === '/about'}>About</SiteLink>
             </NavLink>
-          </li>
-          <li>
+          </ListItem>
+          <ListItem>
             <ExternalNavLink
               href="/rss.xml"
               target="_blank"
@@ -71,7 +75,7 @@ export default function Header({ path }) {
             >
               <SiteLink>RSS</SiteLink>
             </ExternalNavLink>
-          </li>
+          </ListItem>
         </List>
       </nav>
     </HeaderStyled>
