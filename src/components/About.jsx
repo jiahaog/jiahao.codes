@@ -30,13 +30,13 @@ export default function About({
       <h1>{title}</h1>
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <SocialLinks>
-        <SocialLink href={githubUrl}>
+        <SocialLink href={githubUrl} target="_blank" rel="noopener noreferrer">
           <GitHub />
         </SocialLink>
-        <SocialLink href={keybaseUrl}>
+        <SocialLink href={keybaseUrl} target="_blank" rel="noopener noreferrer">
           <Keybase />
         </SocialLink>
-        <SocialLink href={twitterUrl}>
+        <SocialLink href={twitterUrl} target="_blank" rel="noopener noreferrer">
           <Twitter />
         </SocialLink>
       </SocialLinks>
