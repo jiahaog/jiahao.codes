@@ -51,10 +51,32 @@ const TimeToRead = styled.p`
   opacity: 0.6;
 `;
 
+const Separator = styled.div`
+  width: 50%;
+  height: 1px;
+  background-color: #ccc;
+`;
+
+const FlexDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-bottom: 1.45rem;
+`;
+
+function CoverDivider() {
+  return (
+    <FlexDiv>
+      <Separator />
+    </FlexDiv>
+  );
+}
+
 export default function IndexPage({ posts, coverImageSizes }) {
   return (
     <div>
-      <Image alt="Index page cover" sizes={coverImageSizes} width="65vw" />
+      <Image alt="Index page cover" sizes={coverImageSizes} width="70vw" />
+      <CoverDivider />
       <div>
         {posts.map(({ title, path, date, excerpt, timeToRead }) => (
           <PostLink key={path} to={path}>
