@@ -28,8 +28,13 @@ a:visited {
   color: #26418f;
 }
 
-code {
+*:not(pre) > code {
   line-height: 1.2rem;
+
+  /* GitHub style code spans */
+  padding: 0.2em 0.4em;
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
 }
 
 pre {
