@@ -19,12 +19,18 @@ const NavLink = styled(Link)`
 const ExternalNavLink = NavLink.withComponent('a');
 
 const List = styled.ul`
+  display: flex;
   list-style: none;
   margin: 0;
 `;
 
 const ListItem = styled.li`
-  text-align: center;
+  flex-grow: ${({ shouldGrow }) => (shouldGrow ? 1 : null)};
+  padding-left: 1rem;
+
+  &:first-child {
+    padding-left: 0;
+  }
 `;
 
 const SiteTitle = styled.h3`
@@ -55,10 +61,10 @@ export default function Header({ path }) {
     <HeaderStyled>
       <nav>
         <List>
-          <ListItem>
+          <ListItem shouldGrow>
             <NavLink to="/">
               <SiteTitle active={path === '/'}>
-                &nbsp;&lt;&thinsp;Jia&thinsp;Hao&thinsp;/&gt;
+                &lt;&thinsp;Jia&thinsp;Hao&thinsp;/&gt;
               </SiteTitle>
             </NavLink>
           </ListItem>
