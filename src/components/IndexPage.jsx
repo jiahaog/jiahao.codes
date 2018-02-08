@@ -8,12 +8,6 @@ import styled from 'styled-components';
 import Image from './Image';
 import { image as imagePropType } from '../proptypes';
 
-const CoverImage = styled(Image)`
-  @media only screen and (min-width: 740px) {
-    width: 65vw;
-  }
-`;
-
 const PostLink = styled(Link)`
   display: inline-block;
   background-image: none;
@@ -60,7 +54,7 @@ const TimeToRead = styled.p`
 export default function IndexPage({ posts, coverImageSizes }) {
   return (
     <div>
-      <CoverImage alt="Index page cover" sizes={coverImageSizes} />
+      <Image alt="Index page cover" sizes={coverImageSizes} width="65vw" />
       <div>
         {posts.map(({ title, path, date, excerpt, timeToRead }) => (
           <PostLink key={path} to={path}>

@@ -1,14 +1,11 @@
-import React from 'react';
 import GatsbyImage from 'gatsby-image';
 import styled from 'styled-components';
 
-import { image as imagePropType } from '../proptypes';
-
-const Img = styled(GatsbyImage)`
+const Image = styled(GatsbyImage)`
   max-height: 95vh;
 
   @media only screen and (min-width: 740px) {
-    width: 80vw;
+    width: ${({ width }) => width || '80vw'};
 
     /* need both to ensure that image scales relative to its center */
     left: 50%;
@@ -25,10 +22,4 @@ const Img = styled(GatsbyImage)`
   }
 `;
 
-export default function Image(props) {
-  return <Img {...props} />;
-}
-
-Image.defaultProps = {
-  sizes: imagePropType.isRequired,
-};
+export default Image;
