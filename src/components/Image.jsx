@@ -2,8 +2,6 @@ import GatsbyImage from 'gatsby-image';
 import styled from 'styled-components';
 
 const Image = styled(GatsbyImage)`
-  max-height: 95vh;
-
   @media only screen and (min-width: 740px) {
     width: ${({ width }) => width || '80vw'};
 
