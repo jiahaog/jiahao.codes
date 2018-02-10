@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import { Layout } from '../components';
 
-require('prismjs/themes/prism.css');
-require('../styles/globals.css');
+// eslint-disable-next-line import/first
+import 'prismjs/themes/prism.css';
+import '../styles/globals.css';
 
 export default function LayoutTemplate({ location: { pathname }, children }) {
   return <Layout path={pathname}>{children}</Layout>;
