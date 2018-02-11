@@ -4,7 +4,6 @@ const {
   shape: ptShape,
   string: ptString,
   number: ptNumber,
-  object: ptObject,
   arrayOf: ptArrayOf,
 } = PropTypes;
 
