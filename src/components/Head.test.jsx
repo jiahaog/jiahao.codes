@@ -1,6 +1,7 @@
 import React from 'react';
 import { shallow } from 'enzyme';
 import Head from './Head';
+import { sitePropType } from '../../test/fixtures';
 
 test('rendering', () => {
   const props = {
@@ -8,22 +9,7 @@ test('rendering', () => {
     image: 'image',
     title: 'title',
     path: 'path',
-    site: {
-      siteMetadata: {
-        siteUrl: 'siteUrl',
-        title: 'title',
-        author: 'author',
-        description: 'description',
-        facebookAppId: 'facebookAppId',
-        twitterUser: 'twitterUser',
-        social: {
-          githubUrl: 'githubUrl',
-          keybaseUrl: 'keybaseUrl',
-          linkedInUrl: 'linkedInUrl',
-          twitterUrl: 'twitterUrl',
-        },
-      },
-    },
+    site: sitePropType,
   };
   const wrapper = shallow(<Head {...props} />);
   expect(wrapper).toMatchSnapshot();
