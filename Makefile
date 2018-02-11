@@ -33,6 +33,10 @@ lint:
 .PHONY: ci
 ci: lint build
 
+.PHONY: codecov
+codecov:
+	npm run codecov
+
 .PHONY: sentry
 sentry: build
 	npm run release:sentry

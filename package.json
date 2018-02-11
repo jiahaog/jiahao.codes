@@ -44,6 +44,7 @@
     "@sentry/cli": "^1.29.1",
     "babel-jest": "^22.2.2",
     "babel-preset-react": "^6.24.1",
+    "codecov": "^3.0.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.1",
@@ -77,6 +78,7 @@
   },
   "scripts": {
     "start": "gatsby develop",
+    "codecov": "codecov",
     "lint:js": "eslint .",
     "lint:js:fix": "eslint --fix .",
     "lint:css": "stylelint src/**/*.{css,js,jsx}",
