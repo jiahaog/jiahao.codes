@@ -38,7 +38,9 @@ export default function SiteIndex({
 SiteIndex.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: allMarkdownRemarkPropType,
-    indexCover: imagePropType,
+    indexCover: PropTypes.shape({
+      sizes: imagePropType,
+    }),
   }).isRequired,
 };
 

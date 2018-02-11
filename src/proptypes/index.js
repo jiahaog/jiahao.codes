@@ -27,8 +27,11 @@ export const site = ptShape({
   }).isRequired,
 });
 
-// eslint-disable-next-line react/forbid-prop-types
-export const image = ptObject;
+export const image = ptShape({
+  // eslint-disable-next-line react/forbid-prop-types
+  sizes: ptString.isRequired,
+  // TODO: more fields here
+});
 
 export const markdownRemark = ptShape({
   frontmatter: ptShape({
@@ -36,7 +39,11 @@ export const markdownRemark = ptShape({
     title: ptString.isRequired,
     date: ptString.isRequired,
     path: ptString.isRequired,
-    cover: image,
+    cover: ptShape({
+      childImageSharp: ptShape({
+        sizes: image.isRequired,
+      }).isRequired,
+    }),
   }).isRequired,
   excerpt: ptString.isRequired,
   timeToRead: ptNumber.isRequired,

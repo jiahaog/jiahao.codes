@@ -4,7 +4,11 @@ exports[`rendering 1`] = `
 <div>
   <Styled(Image)
     alt="Index page cover"
-    sizes={Object {}}
+    sizes={
+      Object {
+        "sizes": "something",
+      }
+    }
     width="70vw"
   />
   <CoverDivider />

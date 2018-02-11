@@ -1,4 +1,6 @@
-export const imagePropType = {};
+export const imagePropType = {
+  sizes: 'something',
+};
 
 export const markdownRemarkPropType = {
   frontmatter: {
@@ -6,7 +8,11 @@ export const markdownRemarkPropType = {
     title: 'title',
     date: 'date',
     path: 'path',
-    cover: imagePropType,
+    cover: {
+      childImageSharp: {
+        sizes: imagePropType,
+      },
+    },
   },
   excerpt: 'excerpt',
   timeToRead: 10,

@@ -19,7 +19,11 @@ exports[`rendering 1`] = `
   </styled.p>
   <Styled(Image)
     alt="title"
-    sizes={Object {}}
+    sizes={
+      Object {
+        "sizes": "something",
+      }
+    }
   />
   <div
     dangerouslySetInnerHTML={

@@ -27,7 +27,11 @@ exports[`rendering 1`] = `
     title=""
   />
   <IndexPage
-    coverImageSizes={Object {}}
+    coverImageSizes={
+      Object {
+        "sizes": "something",
+      }
+    }
     posts={Array []}
   />
 </div>
