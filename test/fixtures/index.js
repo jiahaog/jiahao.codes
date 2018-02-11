@@ -1,3 +1,5 @@
+export const imagePropType = {};
+
 export const sitePropType = {
   siteMetadata: {
     siteUrl: 'siteUrl',
