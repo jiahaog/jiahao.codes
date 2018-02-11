@@ -80,7 +80,7 @@
     "lint:js": "eslint .",
     "lint:js:fix": "eslint --fix .",
     "lint:css": "stylelint src/**/*.{css,js,jsx}",
-    "test": "jest --coverage",
+    "test": "jest",
     "format": "prettier --write 'src/**/*.js'",
     "build": "gatsby build",
     "serve": "serve public",
