@@ -39,6 +39,7 @@
     "typography-theme-fairy-gates": "^0.15.11"
   },
   "devDependencies": {
+    "@sentry/cli": "^1.29.1",
     "eslint": "^4.17.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-config-prettier": "^2.9.0",
@@ -73,6 +74,7 @@
     "test": "echo \"TODO: Write tests\"",
     "format": "prettier --write 'src/**/*.js'",
     "build": "gatsby build",
-    "serve": "serve public"
+    "serve": "serve public",
+    "release:sentry": "VERSION=$(sentry-cli releases propose-version) && sentry-cli releases new $VERSION && sentry-cli releases set-commits --auto $VERSION"
   }
 }

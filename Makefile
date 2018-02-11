@@ -29,3 +29,10 @@ test: lint
 lint:
 	npm run lint:js
 	npm run lint:css
+
+.PHONY: sentry
+sentry: build
+	npm run release:sentry
+
+.PHONY: release
+release: build sentry
