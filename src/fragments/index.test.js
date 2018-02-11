@@ -1,4 +1,4 @@
-import * as index from './index';
+import * as index from '.';
 
 test('exports', () => {
   expect(index).toMatchSnapshot();
