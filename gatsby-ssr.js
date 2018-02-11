@@ -6,6 +6,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+const SENTRY_DSN = 'https://95a2b760d7da4745871cfc24130d725e@sentry.io/283796';
+const SENTRY_VERSION = '3.22.1';
+
 function SentryCdn({ version }) {
   return (
     <script
@@ -41,8 +44,8 @@ SentryInstall.propTypes = {
   dsn: PropTypes.string.isRequired,
 };
 
-exports.onRenderBody = ({ setHeadComponents }, { version, dsn }) =>
+exports.onRenderBody = ({ setHeadComponents }) =>
   setHeadComponents([
-    <SentryCdn version={version} key="gatsby-plugin-sentry-cdn" />,
-    <SentryInstall dsn={dsn} key="gatsby-plugin-sentry-install" />,
+    <SentryCdn version={SENTRY_VERSION} key="gatsby-plugin-sentry-cdn" />,
+    <SentryInstall dsn={SENTRY_DSN} key="gatsby-plugin-sentry-install" />,
   ]);
