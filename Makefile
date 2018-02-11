@@ -31,7 +31,7 @@ lint:
 	npm run lint:css
 
 .PHONY: ci
-ci: lint build
+ci: lint test
 
 .PHONY: codecov
 codecov:
