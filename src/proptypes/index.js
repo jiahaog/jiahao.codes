@@ -40,6 +40,7 @@ export const markdownRemark = ptShape({
   }).isRequired,
   excerpt: ptString.isRequired,
   timeToRead: ptNumber.isRequired,
+  html: ptString.isRequired,
 }).isRequired;
 
 export const allMarkdownRemark = ptShape({
