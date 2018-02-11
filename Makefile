@@ -14,7 +14,7 @@ install:
 	npm install
 
 .PHONY: build
-build: test
+build: ci
 	npm run build
 
 .PHONY: serve
@@ -22,13 +22,16 @@ serve: build
 	npm run serve
 
 .PHONY: test
-test: lint
+test:
 	npm test
 
 .PHONY: lint
 lint:
 	npm run lint:js
 	npm run lint:css
+
+.PHONY: ci
+ci: lint build
 
 .PHONY: sentry
 sentry: build
