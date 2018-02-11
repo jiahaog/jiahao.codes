@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering 1`] = `
+<HeadComponent
+  description="excerpt"
+  facebookAppId="facebookAppId"
+  image="siteUrlimage"
+  isPost={true}
+  structuredData="[{\\"@context\\":\\"http://schema.org\\",\\"@type\\":\\"WebSite\\",\\"url\\":\\"siteUrl\\",\\"name\\":\\"title\\",\\"alternateName\\":\\"title\\"}]"
+  title="title"
+  twitterUser="twitterUser"
+  url="siteUrlpath"
+/>
+`;

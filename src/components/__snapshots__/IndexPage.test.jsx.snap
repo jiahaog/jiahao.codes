@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering 1`] = `
+<div>
+  <Styled(Image)
+    alt="Index page cover"
+    sizes={Object {}}
+    width="70vw"
+  />
+  <CoverDivider />
+  <div />
+</div>
+`;

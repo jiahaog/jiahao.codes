@@ -4,7 +4,7 @@ import Helmet from 'react-helmet';
 import { site as sitePropType } from '../proptypes';
 
 // TODO: find a better image
-const siteCoverImage = require('../../static/favicons/favicon.ico');
+import siteCoverImage from '../../static/favicons/favicon.ico';
 
 const buildStructuredData = ({ siteUrl, siteTitle }) =>
   JSON.stringify([

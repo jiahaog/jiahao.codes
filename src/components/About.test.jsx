@@ -8,10 +8,10 @@ test('rendering', () => {
     title: 'title',
     html: '<div>hello</div>',
     social: {
-      githubUrl: 'github',
-      keybaseUrl: 'keybase',
-      linkedInUrl: 'linkedin',
-      twitterUrl: 'twitter',
+      githubUrl: 'githubUrl',
+      keybaseUrl: 'keybaseUrl',
+      linkedInUrl: 'linkedInUrl',
+      twitterUrl: 'twitterUrl',
     },
   };
   const wrapper = shallow(<About {...props} />);

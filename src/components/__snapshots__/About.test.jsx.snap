@@ -14,28 +14,28 @@ exports[`rendering 1`] = `
   />
   <styled.div>
     <styled.a
-      href="github"
+      href="githubUrl"
       rel="noopener noreferrer"
       target="_blank"
     >
       <GithubIcon />
     </styled.a>
     <styled.a
-      href="keybase"
+      href="keybaseUrl"
       rel="noopener noreferrer"
       target="_blank"
     >
       <KeybaseIcon />
     </styled.a>
     <styled.a
-      href="twitter"
+      href="twitterUrl"
       rel="noopener noreferrer"
       target="_blank"
     >
       <TwitterIcon />
     </styled.a>
     <styled.a
-      href="linkedin"
+      href="linkedInUrl"
       rel="noopener noreferrer"
       target="_blank"
     >
