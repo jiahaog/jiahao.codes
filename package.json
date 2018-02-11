@@ -75,6 +75,6 @@
     "format": "prettier --write 'src/**/*.js'",
     "build": "gatsby build",
     "serve": "serve public",
-    "release:sentry": "VERSION=$(sentry-cli releases propose-version) && sentry-cli releases new $VERSION && sentry-cli releases set-commits --auto $VERSION"
+    "release:sentry": "VERSION=$(sentry-cli releases propose-version) && sentry-cli releases new $VERSION && (sentry-cli releases set-commits --auto $VERSION || true)"
   }
 }
