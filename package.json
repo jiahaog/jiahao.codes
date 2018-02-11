@@ -80,7 +80,7 @@
     "lint:js": "eslint --ext .js --ext .jsx --ignore-pattern public .",
     "lint:js:fix": "eslint --ext .js --ext .jsx --ignore-pattern public --fix .",
     "lint:css": "stylelint src/**/*.{css,js,jsx}",
-    "test": "jest",
+    "test": "jest --coverage",
     "format": "prettier --write 'src/**/*.js'",
     "build": "gatsby build",
     "serve": "serve public",
