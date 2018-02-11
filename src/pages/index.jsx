@@ -7,7 +7,7 @@ import {
   image as imagePropType,
 } from '../proptypes';
 
-export default function BlogIndex({
+export default function SiteIndex({
   data: { site, allMarkdownRemark: { edges: posts }, indexCover },
 }) {
   return (
@@ -35,7 +35,7 @@ export default function BlogIndex({
   );
 }
 
-BlogIndex.propTypes = {
+SiteIndex.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: allMarkdownRemarkPropType,
     indexCover: imagePropType,
