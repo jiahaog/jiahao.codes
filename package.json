@@ -77,8 +77,8 @@
   },
   "scripts": {
     "start": "gatsby develop",
-    "lint:js": "eslint --ext .js --ext .jsx .",
-    "lint:js:fix": "eslint --ext .js --ext .jsx --ignore-pattern public --fix .",
+    "lint:js": "eslint .",
+    "lint:js:fix": "eslint --fix .",
     "lint:css": "stylelint src/**/*.{css,js,jsx}",
     "test": "jest --coverage",
     "format": "prettier --write 'src/**/*.js'",

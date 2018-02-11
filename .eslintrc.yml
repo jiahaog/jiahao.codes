@@ -6,6 +6,8 @@ extends:
   - prettier/react
 globals:
   graphql: true
+overrides:
+  files: '**/*.{js,jsx}'
 rules:
   # remove <Link/> from anchor-is-valid
   jsx-a11y/anchor-is-valid:
