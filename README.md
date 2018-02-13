@@ -1,9 +1,10 @@
 # [jiahao.codes](https://jiahao.codes)
 
 [![Build Status](https://travis-ci.org/jiahaog/jiahao.codes.svg?branch=master)](https://travis-ci.org/jiahaog/jiahao.codes)
-[![Greenkeeper badge](https://badges.greenkeeper.io/jiahaog/jiahao.codes.svg)](https://greenkeeper.io/)
 [![Maintainability](https://api.codeclimate.com/v1/badges/d38a9c1b83fd46ec56e7/maintainability)](https://codeclimate.com/github/jiahaog/jiahao.codes/maintainability)
 [![codecov](https://codecov.io/gh/jiahaog/jiahao.codes/branch/master/graph/badge.svg)](https://codecov.io/gh/jiahaog/jiahao.codes)
+[![Greenkeeper badge](https://badges.greenkeeper.io/jiahaog/jiahao.codes.svg)](https://greenkeeper.io/)
+[![dependencies Status](https://david-dm.org/jiahaog/jiahao.codes/status.svg)](https://david-dm.org/jiahaog/jiahao.codes)
 
 Personal ~~hype-driven~~ ~~over-engineered~~ awesome website.
 
