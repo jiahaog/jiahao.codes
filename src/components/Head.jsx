@@ -102,7 +102,7 @@ export default function Head({
   title,
   site: {
     siteMetadata: {
-      siteUrl,
+      siteUrl: productionSiteUrl,
       title: siteTitle,
       description: siteDescription,
       facebookAppId,
@@ -110,6 +110,9 @@ export default function Head({
     },
   },
 }) {
+  // Only on development, the images and paths come prefixed with http://localhost:8080
+  const siteUrl =
+    process.env.NODE_ENV === 'production' ? productionSiteUrl : '';
   return (
     <HeadComponent
       {...{
