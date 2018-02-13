@@ -4,7 +4,7 @@ module.exports = {
     title: 'Jia Hao',
     author: 'Jia Hao Goh',
     description: 'Jia Hao blogs about code',
-    facebookAppId: '',
+    facebookAppId: '1373234856114390',
     twitterUser: 'jiahaog',
     social: {
       githubUrl: 'https://github.com/jiahaog',
