@@ -1,10 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { site as sitePropType } from '../proptypes';
 
-// TODO: find a better image
-import siteCoverImage from '../../static/favicons/favicon.ico';
+import { site as sitePropType } from '../proptypes';
+import siteCoverImage from '../img/indexCover.jpg';
 
 const buildStructuredData = ({ siteUrl, siteTitle }) =>
   JSON.stringify([
