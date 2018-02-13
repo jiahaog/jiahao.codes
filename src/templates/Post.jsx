@@ -18,6 +18,7 @@ export default function PostTemplate({
   },
 }) {
   const imageSizes = cover && cover.childImageSharp.sizes;
+  const imageSrc = imageSizes && imageSizes.src;
   return (
     <div>
       <Head
@@ -25,6 +26,7 @@ export default function PostTemplate({
         excerpt={frontmatterExcerpt || excerpt}
         path={path}
         site={site}
+        image={imageSrc}
       />
       <Post
         title={title}
