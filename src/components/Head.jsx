@@ -115,7 +115,7 @@ export default function Head({
     <HeadComponent
       {...{
         description: excerpt || siteDescription,
-        image: image ? siteUrl + image : siteCoverImage,
+        image: siteUrl + (image ? image : siteCoverImage),
         url: siteUrl + path,
         title: title || siteTitle,
         isPost: !!path,
