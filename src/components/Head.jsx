@@ -48,10 +48,12 @@ function HeadComponent({
       <meta property="fb:app_id" content={facebookAppId} />
 
       <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:site" content={twitterUser} />
       <meta name="twitter:creator" content={twitterUser} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
+      <meta name="twitter:image:alt" content="Cover image" />
 
       <link
         rel="apple-touch-icon"
