@@ -57,7 +57,6 @@
     "jest": "^22.2.2",
     "jest-styled-components": "^4.11.0-1",
     "prettier": "^1.10.2",
-    "serve": "^6.4.9",
     "stylelint": "^8.4.0",
     "stylelint-config-standard": "^18.0.0",
     "stylelint-config-styled-components": "^0.1.1",
@@ -85,7 +84,7 @@
     "test": "jest",
     "format": "prettier --write 'src/**/*.js'",
     "build": "gatsby build",
-    "serve": "serve public",
+    "serve": "gatsby serve",
     "release:sentry": "VERSION=$(sentry-cli releases propose-version) && sentry-cli releases new $VERSION && (sentry-cli releases set-commits --auto $VERSION || true)"
   }
 }
