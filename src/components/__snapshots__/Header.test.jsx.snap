@@ -28,17 +28,6 @@ exports[`rendering 1`] = `
           </styled.h3>
         </Styled(GatsbyLink)>
       </styled.li>
-      <styled.li>
-        <styled.a
-          href="/rss.xml"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <styled.h3>
-            RSS
-          </styled.h3>
-        </styled.a>
-      </styled.li>
     </styled.ul>
   </nav>
 </styled.header>

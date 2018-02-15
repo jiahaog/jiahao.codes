@@ -16,8 +16,6 @@ const NavLink = styled(Link)`
   }
 `;
 
-const ExternalNavLink = NavLink.withComponent('a');
-
 const List = styled.ul`
   display: flex;
   list-style: none;
@@ -81,15 +79,6 @@ export default function Header({ path }) {
             <NavLink to="/about">
               <SiteLink active={path === '/about'}>About</SiteLink>
             </NavLink>
-          </ListItem>
-          <ListItem>
-            <ExternalNavLink
-              href="/rss.xml"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <SiteLink>RSS</SiteLink>
-            </ExternalNavLink>
           </ListItem>
         </List>
       </nav>
