@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`rendering 1`] = `
+<styled.footer>
+  <styled.span>
+    © Jia Hao Goh
+  </styled.span>
+  <styled.a
+    href="https://github.com/jiahaog/jiahao.codes"
+    rel="noopener"
+    target="_blank"
+    title="Source code for this website"
+  >
+    <GithubIcon
+      width="20px"
+    />
+  </styled.a>
+</styled.footer>
+`;
