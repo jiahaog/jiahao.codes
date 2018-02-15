@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-import { GitHub } from './svgs';
+import { GitHub } from './icons';
 
 const FooterStyled = styled.footer`
   margin-top: 1rem;

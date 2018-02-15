@@ -4,7 +4,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-import { GitHub, Keybase, LinkedIn, Twitter } from './svgs';
+import { GitHub, Keybase, LinkedIn, Twitter } from './icons';
 import { siteSocial } from '../proptypes';
 
 const SocialLinks = styled.div`

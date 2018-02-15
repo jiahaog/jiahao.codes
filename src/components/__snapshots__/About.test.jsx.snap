@@ -17,6 +17,7 @@ exports[`rendering 1`] = `
       href="githubUrl"
       rel="noopener noreferrer"
       target="_blank"
+      title="My GitHub Profile"
     >
       <GithubIcon
         enlargeOnMobile={true}
@@ -26,6 +27,7 @@ exports[`rendering 1`] = `
       href="keybaseUrl"
       rel="noopener noreferrer"
       target="_blank"
+      title="My Keybase Profile"
     >
       <KeybaseIcon
         enlargeOnMobile={true}
@@ -35,6 +37,7 @@ exports[`rendering 1`] = `
       href="twitterUrl"
       rel="noopener noreferrer"
       target="_blank"
+      title="My Twitter Profile"
     >
       <TwitterIcon
         enlargeOnMobile={true}
@@ -45,6 +48,7 @@ exports[`rendering 1`] = `
       href="linkedInUrl"
       rel="noopener noreferrer"
       target="_blank"
+      title="My LinkedIn Profile"
     >
       <LinkedIn />
     </styled.a>
