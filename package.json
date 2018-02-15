@@ -20,7 +20,6 @@
     "gatsby-plugin-react-helmet": "^2.0.4",
     "gatsby-plugin-react-next": "^1.0.8",
     "gatsby-plugin-sharp": "^1.6.25",
-    "gatsby-plugin-sitemap": "^1.2.13",
     "gatsby-plugin-styled-components": "^2.0.5",
     "gatsby-plugin-typography": "^1.7.13",
     "gatsby-remark-copy-linked-files": "^1.5.25",
@@ -79,7 +78,7 @@
   "scripts": {
     "start": "gatsby develop",
     "codecov": "codecov",
-    "lint:js": "eslint .",
+    "lint:js": "eslint --ext jsx .",
     "lint:js:fix": "eslint --fix .",
     "lint:css": "stylelint src/**/*.{css,js,jsx}",
     "test": "jest",
