@@ -66,3 +66,11 @@ blockquote {
 .gatsby-image-outer-wrapper {
   margin-bottom: 1.45rem;
 }
+
+/* Allow captions for images, when we have emphasized text directly below them */
+.gatsby-resp-image-wrapper + em {
+  display: block;
+  text-align: center;
+  padding-top: 0.8rem;
+  font-size: 0.9rem;
+}
