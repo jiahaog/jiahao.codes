@@ -9,11 +9,14 @@ export default styled.svg`
     opacity: 0.5;
   }
 
-  ${({ enlargeOnMobile }) =>
-    enlargeOnMobile
-      ? `@media only screen and (max-width: 740px) {
-           opacity: 0.6;
-           width: 45px;
-         }`
-      : ''};
+  @media only screen and (max-width: 740px) {
+    ${({ enlargeOnMobile }) =>
+      enlargeOnMobile &&
+      `
+    opacity: 0.6;
+    width: 45px;
+    `};
+  }
+
+  ${({ enlargeOnMobile }) => (enlargeOnMobile ? `` : '')};
 `;
