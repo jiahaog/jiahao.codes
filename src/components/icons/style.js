@@ -10,13 +10,7 @@ export default styled.svg`
   }
 
   @media only screen and (max-width: 740px) {
-    ${({ enlargeOnMobile }) =>
-      enlargeOnMobile &&
-      `
-    opacity: 0.6;
-    width: 45px;
-    `};
+    opacity: ${({ enlargeOnMobile }) => enlargeOnMobile && '0.6'};
+    width: ${({ enlargeOnMobile }) => enlargeOnMobile && '45px'};
   }
-
-  ${({ enlargeOnMobile }) => (enlargeOnMobile ? `` : '')};
 `;
