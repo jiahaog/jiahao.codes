@@ -33,6 +33,7 @@ export default function Footer() {
         href="https://github.com/jiahaog/jiahao.codes"
         target="_blank"
         rel="noopener"
+        title="Source code for this website"
       >
         <GitHub width="20px" />
       </StyledLink>
