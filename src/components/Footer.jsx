@@ -1,9 +1,7 @@
 import React from 'react';
-import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
 import styled from 'styled-components';
 
-import { GitHub } from './icons';
+import { GitHub, RSS } from './icons';
 
 const FooterStyled = styled.footer`
   margin-top: 1rem;
@@ -23,12 +21,26 @@ const StyledLink = styled.a`
 
 const Copyright = styled.span`
   font-size: 0.8rem;
+  flex-grow: 1;
 `;
 
 export default function Footer() {
   return (
     <FooterStyled>
-      <Copyright>© Jia Hao Goh</Copyright>
+      <Copyright>
+        <span role="img" aria-label="Copyright">
+          &copy;
+        </span>{' '}
+        Jia Hao Goh
+      </Copyright>
+      <StyledLink
+        href="/rss.xml"
+        target="_blank"
+        rel="noopener"
+        title="RSS Feed"
+      >
+        <RSS width="16px" />
+      </StyledLink>
       <StyledLink
         href="https://github.com/jiahaog/jiahao.codes"
         target="_blank"

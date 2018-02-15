@@ -3,8 +3,25 @@
 exports[`rendering 1`] = `
 <styled.footer>
   <styled.span>
-    © Jia Hao Goh
+    <span
+      aria-label="Copyright"
+      role="img"
+    >
+      ©
+    </span>
+     
+    Jia Hao Goh
   </styled.span>
+  <styled.a
+    href="/rss.xml"
+    rel="noopener"
+    target="_blank"
+    title="RSS Feed"
+  >
+    <RSS
+      width="16px"
+    />
+  </styled.a>
   <styled.a
     href="https://github.com/jiahaog/jiahao.codes"
     rel="noopener"
