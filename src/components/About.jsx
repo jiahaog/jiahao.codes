@@ -59,9 +59,8 @@ export default function About({
           title="My LinkedIn Profile"
           target="_blank"
           rel="noopener noreferrer"
-          enlargeOnMobile
         >
-          <LinkedIn />
+          <LinkedIn enlargeOnMobile />
         </SocialLink>
       </SocialLinks>
     </div>

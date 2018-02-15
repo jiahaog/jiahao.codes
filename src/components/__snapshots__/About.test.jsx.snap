@@ -44,13 +44,14 @@ exports[`rendering 1`] = `
       />
     </styled.a>
     <styled.a
-      enlargeOnMobile={true}
       href="linkedInUrl"
       rel="noopener noreferrer"
       target="_blank"
       title="My LinkedIn Profile"
     >
-      <LinkedIn />
+      <LinkedIn
+        enlargeOnMobile={true}
+      />
     </styled.a>
   </styled.div>
 </div>
