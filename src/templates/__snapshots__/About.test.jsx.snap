@@ -27,6 +27,11 @@ exports[`rendering 1`] = `
     title="title"
   />
   <About
+    coverImageSizes={
+      Object {
+        "sizes": "something",
+      }
+    }
     html="<div>some content</div>"
     social={
       Object {

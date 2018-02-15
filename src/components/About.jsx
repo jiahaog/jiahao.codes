@@ -4,8 +4,13 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
+import Image from './Image';
 import { GitHub, Keybase, LinkedIn, Twitter } from './icons';
-import { siteSocial } from '../proptypes';
+import { siteSocial, image as imagePropType } from '../proptypes';
+
+const Title = styled.h1`
+  margin-bottom: 2.175rem;
+`;
 
 const SocialLinks = styled.div`
   text-align: right;
@@ -24,10 +29,12 @@ export default function About({
   title,
   html,
   social: { githubUrl, keybaseUrl, linkedInUrl, twitterUrl },
+  coverImageSizes,
 }) {
   return (
     <div>
-      <h1>{title}</h1>
+      <Title>{title}</Title>
+      <Image alt={title} sizes={coverImageSizes} />
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <SocialLinks>
         <SocialLink
@@ -71,4 +78,5 @@ About.propTypes = {
   html: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   social: siteSocial.isRequired,
+  coverImageSizes: imagePropType.isRequired,
 };

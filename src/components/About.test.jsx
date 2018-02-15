@@ -2,6 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme';
 
 import About from './About';
+import { imagePropType } from '../../test/fixtures';
 
 test('rendering', () => {
   const props = {
@@ -13,6 +14,7 @@ test('rendering', () => {
       linkedInUrl: 'linkedInUrl',
       twitterUrl: 'twitterUrl',
     },
+    coverImageSizes: imagePropType,
   };
   const wrapper = shallow(<About {...props} />);
   expect(wrapper).toMatchSnapshot();

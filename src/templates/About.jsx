@@ -8,12 +8,27 @@ import {
 } from '../proptypes';
 
 export default function AboutTemplate({
-  data: { site, markdownRemark: { frontmatter: { title, path }, html } },
+  data: {
+    site,
+    markdownRemark: {
+      frontmatter: {
+        title,
+        path,
+        cover: { childImageSharp: { sizes: coverImageSizes } },
+      },
+      html,
+    },
+  },
 }) {
   return (
     <div>
       <Head title={title} path={path} site={site} />
-      <About title={title} html={html} social={site.siteMetadata.social} />
+      <About
+        title={title}
+        html={html}
+        social={site.siteMetadata.social}
+        coverImageSizes={coverImageSizes}
+      />
     </div>
   );
 }
@@ -30,7 +45,7 @@ export const pageQuery = graphql`
     ...SiteFragment
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       ...MarkdownMetadataFragment
-      ...MarkdownFrontmatterFragment
+      ...MarkdownFrontmatterWithCoverFragment
     }
   }
 `;
