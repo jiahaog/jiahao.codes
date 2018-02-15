@@ -10,5 +10,6 @@ exports[`rendering 1`] = `
       Some content
     </span>
   </styled.div>
+  <Footer />
 </styled.div>
 `;

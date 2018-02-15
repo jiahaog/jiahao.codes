@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import Header from './Header';
+import Footer from './Footer';
 
 const LayoutDiv = styled.div`
   padding-left: 1rem;
@@ -19,6 +20,7 @@ export default function Layout({ path, children }) {
     <LayoutDiv>
       <Header path={path} />
       <ContentDiv>{children()}</ContentDiv>
+      <Footer />
     </LayoutDiv>
   );
 }

@@ -18,23 +18,30 @@ exports[`rendering 1`] = `
       rel="noopener noreferrer"
       target="_blank"
     >
-      <GithubIcon />
+      <GithubIcon
+        enlargeOnMobile={true}
+      />
     </styled.a>
     <styled.a
       href="keybaseUrl"
       rel="noopener noreferrer"
       target="_blank"
     >
-      <KeybaseIcon />
+      <KeybaseIcon
+        enlargeOnMobile={true}
+      />
     </styled.a>
     <styled.a
       href="twitterUrl"
       rel="noopener noreferrer"
       target="_blank"
     >
-      <TwitterIcon />
+      <TwitterIcon
+        enlargeOnMobile={true}
+      />
     </styled.a>
     <styled.a
+      enlargeOnMobile={true}
       href="linkedInUrl"
       rel="noopener noreferrer"
       target="_blank"

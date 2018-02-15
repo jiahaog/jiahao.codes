@@ -31,18 +31,19 @@ export default function About({
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <SocialLinks>
         <SocialLink href={githubUrl} target="_blank" rel="noopener noreferrer">
-          <GitHub />
+          <GitHub enlargeOnMobile />
         </SocialLink>
         <SocialLink href={keybaseUrl} target="_blank" rel="noopener noreferrer">
-          <Keybase />
+          <Keybase enlargeOnMobile />
         </SocialLink>
         <SocialLink href={twitterUrl} target="_blank" rel="noopener noreferrer">
-          <Twitter />
+          <Twitter enlargeOnMobile />
         </SocialLink>
         <SocialLink
           href={linkedInUrl}
           target="_blank"
           rel="noopener noreferrer"
+          enlargeOnMobile
         >
           <LinkedIn />
         </SocialLink>
