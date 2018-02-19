@@ -62,6 +62,11 @@ blockquote {
   border-left: 1px solid #1ca086;
 }
 
+.anchor,
+.anchor:hover {
+  background-image: none;
+}
+
 /* Because of the responsive image loading, the margin for the images do not apply */
 .gatsby-image-outer-wrapper {
   margin-bottom: 1.45rem;
