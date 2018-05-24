@@ -1,3 +1,5 @@
+plugins:
+  - prettier
 env:
   jest: true
 extends:
@@ -11,5 +13,6 @@ rules:
   jsx-a11y/anchor-is-valid:
     - error
     - components: []
+  prettier/prettier: error
 settings:
   import/core-modules: ['react', 'react-helmet']
