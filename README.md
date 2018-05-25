@@ -8,7 +8,7 @@
 
 Personal ~~hype-driven~~ ~~over-engineered~~ awesome website.
 
-Built with [React](https://reactjs.org/), [Gatsby](https://www.gatsbyjs.org/) and other amazing tools. Content is hosted all over the world with [Netlify](https://www.netlify.com/).
+Built with [React](https://reactjs.org/), [Gatsby](https://www.gatsbyjs.org/) and other amazing tools. Content is hosted all over the world with [Netlify](https://www.netlify.com/). I write more about this [here](https://jiahao.codes/blog/why-i-upgraded-my-website/) and [here](https://jiahao.codes/blog/integrating-and-building-all-the-things/)!
 
 ## Getting Started
 
