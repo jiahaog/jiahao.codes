@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@sentry/cli": "^1.29.1",
-    "babel-jest": "^22.2.2",
+    "babel-jest": "^23.0.0",
     "babel-preset-react": "^6.24.1",
     "codecov": "^3.0.0",
     "enzyme": "^3.3.0",
