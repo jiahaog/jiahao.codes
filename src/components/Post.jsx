@@ -37,8 +37,8 @@ export default function Post({ title, date, excerpt, html, coverImageSizes }) {
       <div dangerouslySetInnerHTML={{ __html: html }} />
       <hr />
       <p>
-        <Link to="/about">I’m</Link> Jia Hao, and I write software in Singapore.
-        Follow me on{' '}
+        <Link to="/about">I’m</Link> Jia Hao, and I write software in San
+        Francisco. Follow me on{' '}
         <a href="https://twitter.com/jiahaog" rel="noopener noreferrer">
           Twitter
         </a>!

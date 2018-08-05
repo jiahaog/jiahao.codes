@@ -293,4 +293,4 @@ Hopefully this website will accompany me through my coding journey, inspiring to
 
 ## Acknowledgements
 
-Many thanks to [Glen](https://github.com/glencbz) for reviewing this post, and [gilbarbara/logos](https://github.com/gilbarbara/logos) for the images in the cover image.
+Many thanks to [Glen](https://github.com/glencbz) for reviewing this post, and [gilbarbara/logos](https://github.com/gilbarbara/logos) for the images in the cover image. SVG icons on this website are taken from [Font Awesome](https://fontawesome.com/).
