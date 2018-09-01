@@ -1,6 +1,6 @@
 ---
 title: Mistakes Were Made
-date: 2019-06-19
+date: 2018-06-19
 path: /blog/mistakes-were-made/
 cover: ./cover.jpg
 excerpt: Bamboozled by some Python
