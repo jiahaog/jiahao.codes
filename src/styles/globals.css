@@ -1,5 +1,6 @@
 /* https://material.io/color/#!/?view.left=0&view.right=0&primary.color=5C6BC0&primary.text.color=ffffff */
 
+a > code.language-text,
 a {
   color: #5c6bc0;
   background-image: linear-gradient(
@@ -15,6 +16,12 @@ a {
     0.06em 0 #fff, -0.06em 0 #fff, 0.06em 0 #fff, -0.075em 0 #fff;
 }
 
+/* Don't show the underline for code links */
+a > code.language-text {
+  background-image: none;
+}
+
+a > code.language-text:hover,
 a:hover {
   color: #26418f;
   background-image: linear-gradient(
@@ -43,6 +50,11 @@ a:visited {
   border-radius: 3px;
 }
 
+/* Override the pygments theme to increase padding */
+:not(pre) > code[class*='language-'] {
+  padding: 0.2em 0.4em;
+}
+
 pre {
   background: hsla(0, 0%, 0%, 0.04);
   border-radius: 3px;
@@ -54,6 +66,11 @@ pre {
 /* Be consistent with the bottom margin for <p>s */
 pre[class*='language-'] {
   margin-bottom: 1.45rem;
+}
+
+/* Somehow operators have a whitish background in code */
+.token.operator {
+  background: none;
 }
 
 blockquote {
@@ -78,4 +95,11 @@ blockquote {
   text-align: center;
   padding-top: 0.8rem;
   font-size: 0.9rem;
+}
+
+/* Allow tables to scroll horizontally */
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 }
