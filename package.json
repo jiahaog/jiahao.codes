@@ -32,7 +32,7 @@
     "gatsby-remark-smartypants": "^1.4.10",
     "gatsby-source-filesystem": "^1.5.11",
     "gatsby-transformer-remark": "^1.7.28",
-    "gatsby-transformer-sharp": "^1.6.16",
+    "gatsby-transformer-sharp": "^2.1.1",
     "prismjs": "^1.15.0",
     "prop-types": "^15.6.0",
     "raven-js": "^3.22.2",
