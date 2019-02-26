@@ -5,6 +5,6 @@ path: /about/
 cover: ./cover.jpg
 ---
 
-Hi! I’m Jia Hao. I write Software at [Amazon](https://www.amazon.com/) in San Francisco, and previously at [Grab](https://www.grab.com/sg/). Welcome to my site where I talk about the world of ones and zeroes.
+Hi! I’m Jia Hao, and I work as a software engineer at Google. This site is the home to some of the things I find interesting or useful. [Here's](/blog/why-i-upgraded-my-website/) a bit more about the tech behind this seemingly simple (and overengineered) website.
 
-Read more about the architecture of this website [here](/blog/why-i-upgraded-my-website/).
+<small>*Needless to say, anything posted is my personal opinion and do not represent those of my employer.*</small>
