@@ -21,7 +21,7 @@
     "gatsby-plugin-react-helmet": "^3.0.9",
     "gatsby-plugin-react-next": "^1.0.8",
     "gatsby-plugin-sharp": "^2.0.29",
-    "gatsby-plugin-sitemap": "^1.2.13",
+    "gatsby-plugin-sitemap": "^2.0.9",
     "gatsby-plugin-styled-components": "^2.0.5",
     "gatsby-plugin-typography": "^1.7.13",
     "gatsby-remark-autolink-headers": "^1.4.12",
