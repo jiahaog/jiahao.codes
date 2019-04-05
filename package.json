@@ -8,7 +8,7 @@
     "url": "https://github.com/jiahaog/jiahao.codes/issues"
   },
   "dependencies": {
-    "gatsby": "^1.9.158",
+    "gatsby": "^2.3.14",
     "gatsby-image": "^1.0.35",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-catch-links": "^1.0.19",
