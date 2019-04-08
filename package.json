@@ -23,7 +23,7 @@
     "gatsby-plugin-sharp": "^1.6.25",
     "gatsby-plugin-sitemap": "^1.2.13",
     "gatsby-plugin-styled-components": "^2.0.5",
-    "gatsby-plugin-typography": "^1.7.13",
+    "gatsby-plugin-typography": "^2.2.11",
     "gatsby-remark-autolink-headers": "^1.4.12",
     "gatsby-remark-copy-linked-files": "^1.5.25",
     "gatsby-remark-images": "^1.5.37",
