@@ -22,7 +22,7 @@
     "gatsby-plugin-react-next": "^1.0.8",
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-plugin-sitemap": "^2.0.12",
-    "gatsby-plugin-styled-components": "^2.0.5",
+    "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-plugin-typography": "^1.7.13",
     "gatsby-remark-autolink-headers": "^1.4.12",
     "gatsby-remark-copy-linked-files": "^1.5.25",
